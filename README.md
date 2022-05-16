@@ -54,8 +54,15 @@ After downloading the dataset, if you wish to preprocess the data as we did, two
 
     To use this script, please first go into the folder `daic_woz_preprocessing/Excel for splitting data` and find the GT file you need for splitting the data. In our case, it will be "full_train_split_Depression_AVEC2017.csv" and "full_test_split.csv". Then for the rest of the steps, please refer to `database_generation_v1` above.
 
-
 # Sub-attentional ConvBiLSTM with AVT modality
+
+The overall archetecture of the **Sub-attentional ConvBiLSTM** model:
+![Sub-attentional_ConvBiLSTM](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/ConvBiLSTM_Sub-Atten.png)
+
+The CNN layers and BiLSTM blocks are utilized as feature extractors, followed by 8 different attentional late fusion layers with 8 classification heads. For more detail, please refer to the [bachelor's thesis](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/BA_Ping-Cheng%20Wei.pdf).
+
+The archetecture of each attentional fusion layer, which includes a gobal attention and a local attention, could be illustrated as below:
+![attentional fusion layer](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/Attentional_Fusion_Block.png)
 
 
 # Installation
