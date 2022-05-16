@@ -120,7 +120,7 @@ The archetecture of each attentional fusion layer, which includes a gobal attent
 
    * For more infomation about Anaconda enviroments managing, please check this [links](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
-5. Download the model weights and store them in the each model in `models/<which model>/model_weights` directory. The followings are the available pretrained weights:
+5. Download the model weights and store them in the each model in `models/<which model>/model_weights` directory. The followings are the available pre-trained weights:
 
 TODO
 
@@ -139,10 +139,67 @@ TODO
 
 # Implementation
 
+To implement the model, please choose a model you desire in the `models` directory first.
+
+```bash
+cd models/<desired model>
+# for example: cd models/AVT_ConvLSTM_Sub-Attention
+```
+
+For each model folder, the following structure can be found
+
+```
+<AVT_ConvLSTM_Sub-Attention>/
+config/
+    config_inference.yaml
+    config_phq-subscores.yaml
+dataset/
+    dataset.py
+    utils.py
+models/
+    convlstm.py
+    evaluator.py
+    fusion.py
+    ...
+model_weights/
+    <where to store the pretrained weights>
+    ...
+main_inference.py
+main_phq-subscores.py
+utils.py
+```
+
+If some folders did not exist, e.g. "model_weights", please create it by yourself. As one can notice, each configuration file (config) corresponds to each main script (main_xxxxx.py)and the utility script (utils.py) under the main scripts contains all the local functions for the main scripts. Please make sure the strucutre stay consistence like this, otherwise the model won't work.
+
 ## Test a Model
+
+To test a model, please first make sure the data is generated and change all the configuration in the `config_inference.yaml` according to your desire. Also download the pre-trained weights if needed. Then run:
+
+```bash
+python main_inference.py
+```
+
+For more complex setting, run the following code and set each value to your desire
+
+```bash
+python main_inference.py --config_file=<path/to/config.yaml> --device=<'cuda' or 'cpu'> --gpu=<'gpu ID' can be multiple like '2, 3'> --save=<True or False>
+# for example: python main_inference.py --config_file=config/config_inference.yaml --device=cuda --gpu=2,3 --save=False
+```
 
 ## Train a New Model
 
+To train a model, please also first make sure the data is generated and change all the configuration in the `config_phq-subscores.yaml` according to your desire. Then run:
+
+```bash
+python main_phq-subscores.py
+```
+
+For more complex setting, run the following code and set each value to your desire
+
+```bash
+python main_phq-subscores.py --config_file=<path/to/config.yaml> --device=<'cuda' or 'cpu'> --gpu=<'gpu ID' can be multiple like '2, 3'> --save=<True or False>
+# for example: python main_phq-subscores.py --config_file=config/config_phq-subscores.yaml --device=cuda --gpu=2,3 --save=True
+```
 
 # Results
 
