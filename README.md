@@ -1,16 +1,58 @@
 # Deep Learning-based Multi-modal Depression Estimation using Knowledge from Micro-facial Expressions, Audio and Text
 
-This is the whole project of my bacherlor thesis.
+This is the whole project of my bacherlor thesis. It is about automatic depression estimation based on AI approach.
 
 This repository includes:
 
 * The Source Code of final model, `"Sub-attentional ConvBiLSTM with AVT modality"`
 * The Source Code of other models
-* Trained weights of each models
+* Trained weights of each model
 * Other useful scripts
 * Documentations and images
 
 # DAIC-WOZ Depression Database
+DAIC-WOZ depression database is utilized in this thesis. Here is the official [link](https://dcapswoz.ict.usc.edu/), where you can send a request and receive your own username and password to access the database.
+
+
+Some visualizations for each data type exploited in this work.
+
+1. Visual data of micro-facial expression
+
+![Visual data of micro-facial expression](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/gif_P321_time-58-88.gif)
+
+2. Acoustic data of log-mel spectrogram
+
+![Acoustic data of log-mel spectrogram](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/mel_spectrogram_comparison.png)
+
+3. Text data of sentence embeddings
+
+![Text data of sentence embeddings](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/sentence_embeddings.png)
+
+
+To download the database automatically, there is a created script, `download_DAIC-WOZ.py`, in the `daic_woz_preprocessing` directory for you to use. Please enter this directory and run the script with the following two codes, respectively.
+
+```bash
+cd <path/to/daic_woz_preprocessing>
+
+python download_DAIC-WOZ.py --out_dir=<where/to/store/absolute_path> --username=<the_give_username> --password=<the_given_password>
+```
+
+After downloading the dataset, if you wish to preprocess the data as we did, two kind of scripts for database generation are provided in the `database_generation_v1` and `database_generation_v2` directory under the folder, `daic_woz_preprocessing`.
+
+* For `database_generation_v1`: This will generate training, validation, test dataset based on train-set, develop-set, test-set, respectively.
+
+    To use this script, please first go into the folder `daic_woz_preprocessing/Excel for splitting data` and find the GT file you need for splitting the data. In our case, it will be "train_split_Depression_AVEC2017.csv", "dev_split_Depression_AVEC2017.csv", and "full_test_split.csv". Or you can also utilize the one provided from the official DAIC_WOZ. Then open the script you want to use and go to the line `if __name__ == '__main__':`, where you can find `# output root`, `# read gt file`, `# get all files path of participant` nearby. Please enter the absolute path to where you want to store, where the GT file is, and where each data type is to each variable. Now you can run the following example code to generate your dataset:
+
+    ```bash
+    python <path/to/script/name>
+    # for example: python daic_woz_preprocessing/database_generation_v1/database_generation_train.py
+    ```
+
+    **Be aware !!! The generated database could be over 200GB since this generated dataset include all of the variable in this thesis for comparison studies in the experiments. Therefore, please exclude the "np.save" parts in the "sliding_window" function, which you don't need. For instance, the one with coordinate+confidence, spectrogram, hog_features, action units, etc. Moreover, you might also don't need the original dataset, which has been tested and demonstrated in this thesis that it is not that useful. Please also exlude all of the code related to it if you don't need it.**
+
+* For `database_generation_v2`: Similar to `database_generation_v1`, but this time train dataset is generated based on "train-set + develop-set" and text dataset is test-set itself.
+
+    To use this script, please first go into the folder `daic_woz_preprocessing/Excel for splitting data` and find the GT file you need for splitting the data. In our case, it will be "full_train_split_Depression_AVEC2017.csv" and "full_test_split.csv". Then for the rest of the steps, please refer to `database_generation_v1` above.
 
 
 # Sub-attentional ConvBiLSTM with AVT modality

@@ -399,8 +399,8 @@ if __name__ == '__main__':
     create_folders(root_dir)
     np.random.seed(1)
 
-    # read training gt file
-    gt_path = '/cvhci/temp/wpingcheng/DAIC-WOZ_dataset/try.csv'  # train_split_Depression_AVEC2017
+    # read  gt file
+    gt_path = '/cvhci/temp/wpingcheng/DAIC-WOZ_dataset/train_split_Depression_AVEC2017.csv'
     gt_df = pd.read_csv(gt_path) 
 
     # initialization

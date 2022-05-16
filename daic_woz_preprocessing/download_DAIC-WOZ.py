@@ -6,7 +6,7 @@ other documents as well as matlab scripts in util.zip
 Excluded sessions: 342,394,398,460
 -------------------------------------------------------------------------
 run from the commend line as such:
-    in Linux: python3 download_DAIC-WOZ.py --out_dir=D:\test
+    in Linux: python3 download_DAIC-WOZ.py --out_dir=<where/to/store/absolute_path> --username=<the_give_username> --password=<the_given_password>
 '''
 
 import os
@@ -16,7 +16,7 @@ from io import BytesIO
 import argparse
 
 
-def download_dataset(OUTPUT_DIR):
+def download_dataset(OUTPUT_DIR, USERNAME, PASSWORD):
     '''
     Automatically download the "DAIC-WOZ dataset" for depression estimation from the website
     :param OUTPUT_DIR: either folder in current local path or absolute path to other folder
@@ -27,8 +27,8 @@ def download_dataset(OUTPUT_DIR):
     excluded = [342, 394, 398, 460]
 
     # for website download authentication
-    username = "daicwozuser"
-    password = "Tqiy7T7CD9OBTa1VZ5CLjgni"
+    username = USERNAME
+    password = PASSWORD
 
     dataset_destination = OUTPUT_DIR
 
@@ -105,10 +105,16 @@ if __name__ == '__main__':
     parser.add_argument('--out_dir', required=True,
                         metavar="output path to store the datasets",
                         help='output path to store the datasets')
+    parser.add_argument('--username', required=True,
+                        metavar="username you received after submitting the request",
+                        help='username you received after submitting the request')
+    parser.add_argument('--password', required=True,
+                        metavar="password you received after submitting the request",
+                        help='password you received after submitting the request')
     args = parser.parse_args()
 
     # download the whole DAIC-WOZ dataset
-    download_dataset(args.out_dir)
+    download_dataset(args.out_dir, args.username, args.password)
     print('done!')
 
 
