@@ -1,0 +1,83 @@
+!!omap
+- OUTPUT_DIR: exp_AVT+ConvBiLSTM+PHQ-Subscores+Sub-Attention+Soft
+- SAVE_CONFIG_NAME: config_AVT+ConvBiLSTM+PHQ-Subscores+Sub-Attention+Soft.yaml
+- CKPTS_DIR: /cvhci/temp/wpingcheng/ckpts_fusion/
+- TYPE: AVT+ConvBiLSTM+PHQ-Subscores+Sub-Attention+Soft
+- MANUAL_SEED: 1
+- LOG_TITLE: Depression Detection with audio + visual + text data, ConvBiLSTM, PHQ-Subscores,
+    Fusion-Sub-Attention, KLDivLoss(soft-label), ASAM
+- DATA: !!omap
+  - TRAIN_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/train/clipped_data/
+  - VALIDATION_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/train/original_data/
+  - TEST_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/test/clipped_data/
+  - USE_MEL_SPECTROGRAM: true
+  - VISUAL_WITH_GAZE: true
+  - PADDING:
+  - RESCALE_SIZE:
+  - CROP_SIZE:
+  - BATCH_SIZE: 240
+  - NUM_WORKERS: 0
+- MODEL: !!omap
+  - PHQ_THRESHOLD: 10
+  - EPOCHS: 300
+  - WEIGHTS: !!omap
+    - TYPE: absolute_path
+    - DATE:
+    - PATH: model_weights
+    - NAME:
+    - CUSTOM_ABSOLUTE_PATH: /cvhci/temp/wpingcheng/ckpts_fusion/AVT+ConvBiLSTM+PHQ-Subscores+Sub-Attention+Soft/AVT+ConvBiLSTM+PHQ-Subscores+Sub-Attention+Soft_2022-03-22_155959_acc-81.2245.pt
+    - INCLUDED:
+      - audio_net
+      - visual_net
+      - text_net
+      - evaluator
+  - VISUAL_NET: !!omap
+    - INPUT_DIM: 3
+    - CONV_HIDDEN: 256
+    - LSTM_HIDDEN: 256
+    - OUTPUT_DIM: 256
+    - NUM_LAYERS: 4
+    - ACTIVATION: relu
+    - NORM: bn
+    - DROPOUT: 0.7
+  - AUDIO_NET: !!omap
+    - INPUT_DIM: 80
+    - CONV_HIDDEN: 256
+    - LSTM_HIDDEN: 256
+    - OUTPUT_DIM: 256
+    - NUM_LAYERS: 4
+    - ACTIVATION: relu
+    - NORM: bn
+    - DROPOUT: 0.7
+  - TEXT_NET: !!omap
+    - INPUT_DIM: 512
+    - CONV_HIDDEN: 256
+    - LSTM_HIDDEN: 256
+    - OUTPUT_DIM: 256
+    - NUM_LAYERS: 2
+    - ACTIVATION: relu
+    - NORM: bn
+    - DROPOUT: 0.7
+  - EVALUATOR: !!omap
+    - PREDICT_TYPE: phq-subscores
+    - INPUT_FEATURE_DIM: 768
+    - CLASSES_RESOLUTION: 32
+    - N_CLASSES: 4
+    - N_SUBSCORES: 8
+    - DROPOUT: 0.5
+    - STD: 5
+    - ATTENTION: !!omap
+      - INPUT_DIM: 1
+      - HIDDEN_DIM: 4
+      - BASE_WIDTH: 256
+      - FUSE_TYPE: iAFF
+  - CRITERION: !!omap
+    - USE_SOFT_LABEL: true
+    - USE_WEIGHTS: true
+  - OPTIMIZER: !!omap
+    - LR: 0.001
+    - WEIGHT_DECAY: 0.0001
+    - USE_SAM: true
+  - SCHEDULER: !!omap
+    - STEP_SIZE: 10
+    - GAMMA: 0.9

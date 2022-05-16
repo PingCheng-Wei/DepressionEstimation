@@ -1,0 +1,5051 @@
+------------------------------------------------------Depression Detection with audio and visual data, ConvBiLSTM, PHQ-Subscores, Fusion-maximum, KLDivLoss(soft-label), ASAM------------------------------------------------------
+Epoch: 0  Current Best Test for f1-score: 0 at epoch 0
+Epoch: 0  Current Best Test for accuracy: 0 at epoch 0
+  End of train:
+  | time:   37.531s | LR: 0.000500 | Average Loss:  0.19553 | Accuracy: 78.41% (1028/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  676 | FP:  195 |
+    -----------------------
+    | FN:   88 | TN:  352 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8848
+      TNR/Specificity: 0.6435
+      Precision: 0.7761
+      Recall: 0.8848
+      F1-score: 0.8269
+  - Regression:
+      MAE:  3.3387
+      MSE: 18.9817
+      RMSE:  4.3568
+      R2:  0.5613
+
+  - Correlation:
+      Spearman correlation: 0.760341
+
+  End of test:
+  | time:    4.167s | LR: 0.000500 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   54 | FP:   22 |
+    -----------------------
+    | FN:   80 | TN:  334 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4030
+      TNR/Specificity: 0.9382
+      Precision: 0.7105
+      Recall: 0.4030
+      F1-score: 0.5143
+  - Regression:
+      MAE:  5.8449
+      MSE: 51.9184
+      RMSE:  7.2054
+      R2: -0.5764
+
+  - Correlation:
+      Spearman correlation: 0.103812
+
+--------- New best found for f1-score at epoch 0 !!! ---------
+- train score: 0.826911
+- test score: 0.514286
+--------- New best found for f1-score at epoch 0 !!! ---------
+
+--------- New best found for accuracy at epoch 0 !!! ---------
+- train score: 78.413425
+- test score: 79.183673
+--------- New best found for accuracy at epoch 0 !!! ---------
+
+Epoch: 1  Current Best Test for f1-score: 0.5142857142857143 at epoch 0
+Epoch: 1  Current Best Test for accuracy: 79.18367346938776 at epoch 0
+  End of train:
+  | time:   29.705s | LR: 0.000500 | Average Loss:  0.18784 | Accuracy: 88.79% (1164/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  576 | FP:   17 |
+    -----------------------
+    | FN:  130 | TN:  588 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8159
+      TNR/Specificity: 0.9719
+      Precision: 0.9713
+      Recall: 0.8159
+      F1-score: 0.8868
+  - Regression:
+      MAE:  2.2975
+      MSE:  8.7338
+      RMSE:  2.9553
+      R2:  0.7874
+
+  - Correlation:
+      Spearman correlation: 0.915730
+
+  End of test:
+  | time:    4.214s | LR: 0.000500 | Average Loss:      nan | Accuracy: 81.02% (397/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   61 | FP:   20 |
+    -----------------------
+    | FN:   73 | TN:  336 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4552
+      TNR/Specificity: 0.9438
+      Precision: 0.7531
+      Recall: 0.4552
+      F1-score: 0.5674
+  - Regression:
+      MAE:  5.5653
+      MSE: 51.2469
+      RMSE:  7.1587
+      R2: -0.5560
+
+  - Correlation:
+      Spearman correlation: 0.155024
+
+--------- New best found for f1-score at epoch 1 !!! ---------
+- train score: 0.886836
+- test score: 0.567442
+--------- New best found for f1-score at epoch 1 !!! ---------
+
+--------- New best found for accuracy at epoch 1 !!! ---------
+- train score: 88.787185
+- test score: 81.020408
+--------- New best found for accuracy at epoch 1 !!! ---------
+
+Epoch: 2  Current Best Test for f1-score: 0.5674418604651164 at epoch 1
+Epoch: 2  Current Best Test for accuracy: 81.0204081632653 at epoch 1
+  End of train:
+  | time:   28.184s | LR: 0.000500 | Average Loss:  0.17895 | Accuracy: 88.10% (1155/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  547 | FP:    9 |
+    -----------------------
+    | FN:  147 | TN:  608 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.7882
+      TNR/Specificity: 0.9854
+      Precision: 0.9838
+      Recall: 0.7882
+      F1-score: 0.8752
+  - Regression:
+      MAE:  2.5507
+      MSE: 10.8696
+      RMSE:  3.2969
+      R2:  0.7432
+
+  - Correlation:
+      Spearman correlation: 0.918136
+
+  End of test:
+  | time:    3.488s | LR: 0.000500 | Average Loss:      nan | Accuracy: 80.61% (395/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   24 |
+    -----------------------
+    | FN:   71 | TN:  332 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9326
+      Precision: 0.7241
+      Recall: 0.4701
+      F1-score: 0.5701
+  - Regression:
+      MAE:  5.7490
+      MSE: 56.1898
+      RMSE:  7.4960
+      R2: -0.7061
+
+  - Correlation:
+      Spearman correlation: 0.137273
+
+--------- New best found for f1-score at epoch 2 !!! ---------
+- train score: 0.875200
+- test score: 0.570136
+--------- New best found for f1-score at epoch 2 !!! ---------
+
+Epoch: 3  Current Best Test for f1-score: 0.5701357466063348 at epoch 2
+Epoch: 3  Current Best Test for accuracy: 81.0204081632653 at epoch 1
+  End of train:
+  | time:   27.678s | LR: 0.000500 | Average Loss:  0.16214 | Accuracy: 90.85% (1191/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  610 | FP:    8 |
+    -----------------------
+    | FN:  112 | TN:  581 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8449
+      TNR/Specificity: 0.9864
+      Precision: 0.9871
+      Recall: 0.8449
+      F1-score: 0.9104
+  - Regression:
+      MAE:  2.7140
+      MSE: 12.4744
+      RMSE:  3.5319
+      R2:  0.7102
+
+  - Correlation:
+      Spearman correlation: 0.916910
+
+  End of test:
+  | time:    3.791s | LR: 0.000500 | Average Loss:      nan | Accuracy: 79.80% (391/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   29 |
+    -----------------------
+    | FN:   70 | TN:  327 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9185
+      Precision: 0.6882
+      Recall: 0.4776
+      F1-score: 0.5639
+  - Regression:
+      MAE:  5.7673
+      MSE: 59.3918
+      RMSE:  7.7066
+      R2: -0.8033
+
+  - Correlation:
+      Spearman correlation: 0.264624
+
+Epoch: 4  Current Best Test for f1-score: 0.5701357466063348 at epoch 2
+Epoch: 4  Current Best Test for accuracy: 81.0204081632653 at epoch 1
+  End of train:
+  | time:   26.249s | LR: 0.000500 | Average Loss:  0.14331 | Accuracy: 90.92% (1192/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  592 | FP:    8 |
+    -----------------------
+    | FN:  111 | TN:  600 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8421
+      TNR/Specificity: 0.9868
+      Precision: 0.9867
+      Recall: 0.8421
+      F1-score: 0.9087
+  - Regression:
+      MAE:  3.1579
+      MSE: 16.4683
+      RMSE:  4.0581
+      R2:  0.6101
+
+  - Correlation:
+      Spearman correlation: 0.906476
+
+  End of test:
+  | time:    3.781s | LR: 0.000500 | Average Loss:      nan | Accuracy: 81.22% (398/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   21 |
+    -----------------------
+    | FN:   71 | TN:  335 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9410
+      Precision: 0.7500
+      Recall: 0.4701
+      F1-score: 0.5780
+  - Regression:
+      MAE:  5.9265
+      MSE: 63.0408
+      RMSE:  7.9398
+      R2: -0.9141
+
+  - Correlation:
+      Spearman correlation: 0.305981
+
+--------- New best found for f1-score at epoch 4 !!! ---------
+- train score: 0.908672
+- test score: 0.577982
+--------- New best found for f1-score at epoch 4 !!! ---------
+
+--------- New best found for accuracy at epoch 4 !!! ---------
+- train score: 90.922960
+- test score: 81.224490
+--------- New best found for accuracy at epoch 4 !!! ---------
+
+Epoch: 5  Current Best Test for f1-score: 0.5779816513761469 at epoch 4
+Epoch: 5  Current Best Test for accuracy: 81.22448979591836 at epoch 4
+  End of train:
+  | time:   27.185s | LR: 0.000500 | Average Loss:  0.12457 | Accuracy: 90.31% (1184/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  590 | FP:    8 |
+    -----------------------
+    | FN:  119 | TN:  594 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8322
+      TNR/Specificity: 0.9867
+      Precision: 0.9866
+      Recall: 0.8322
+      F1-score: 0.9028
+  - Regression:
+      MAE:  3.2044
+      MSE: 16.5103
+      RMSE:  4.0633
+      R2:  0.6096
+
+  - Correlation:
+      Spearman correlation: 0.909291
+
+  End of test:
+  | time:    3.758s | LR: 0.000500 | Average Loss:      nan | Accuracy: 80.82% (396/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   26 |
+    -----------------------
+    | FN:   68 | TN:  330 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.9270
+      Precision: 0.7174
+      Recall: 0.4925
+      F1-score: 0.5841
+  - Regression:
+      MAE:  5.7265
+      MSE: 60.6245
+      RMSE:  7.7862
+      R2: -0.8407
+
+  - Correlation:
+      Spearman correlation: 0.200918
+
+--------- New best found for f1-score at epoch 5 !!! ---------
+- train score: 0.902831
+- test score: 0.584071
+--------- New best found for f1-score at epoch 5 !!! ---------
+
+Epoch: 6  Current Best Test for f1-score: 0.5840707964601769 at epoch 5
+Epoch: 6  Current Best Test for accuracy: 81.22448979591836 at epoch 4
+  End of train:
+  | time:   26.516s | LR: 0.000500 | Average Loss:  0.10574 | Accuracy: 90.01% (1180/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  589 | FP:    6 |
+    -----------------------
+    | FN:  125 | TN:  591 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8249
+      TNR/Specificity: 0.9899
+      Precision: 0.9899
+      Recall: 0.8249
+      F1-score: 0.8999
+  - Regression:
+      MAE:  2.7452
+      MSE: 12.9146
+      RMSE:  3.5937
+      R2:  0.6959
+
+  - Correlation:
+      Spearman correlation: 0.926262
+
+  End of test:
+  | time:    3.749s | LR: 0.000500 | Average Loss:      nan | Accuracy: 81.63% (400/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   62 | FP:   18 |
+    -----------------------
+    | FN:   72 | TN:  338 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4627
+      TNR/Specificity: 0.9494
+      Precision: 0.7750
+      Recall: 0.4627
+      F1-score: 0.5794
+  - Regression:
+      MAE:  5.6898
+      MSE: 58.8000
+      RMSE:  7.6681
+      R2: -0.7853
+
+  - Correlation:
+      Spearman correlation: 0.158328
+
+--------- New best found for accuracy at epoch 6 !!! ---------
+- train score: 90.007628
+- test score: 81.632653
+--------- New best found for accuracy at epoch 6 !!! ---------
+
+Epoch: 7  Current Best Test for f1-score: 0.5840707964601769 at epoch 5
+Epoch: 7  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.741s | LR: 0.000500 | Average Loss:  0.08900 | Accuracy: 91.38% (1198/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  605 | FP:    5 |
+    -----------------------
+    | FN:  108 | TN:  593 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8485
+      TNR/Specificity: 0.9916
+      Precision: 0.9918
+      Recall: 0.8485
+      F1-score: 0.9146
+  - Regression:
+      MAE:  2.3249
+      MSE:  9.9008
+      RMSE:  3.1466
+      R2:  0.7699
+
+  - Correlation:
+      Spearman correlation: 0.947031
+
+  End of test:
+  | time:    3.758s | LR: 0.000500 | Average Loss:      nan | Accuracy: 80.82% (396/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   24 |
+    -----------------------
+    | FN:   70 | TN:  332 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9326
+      Precision: 0.7273
+      Recall: 0.4776
+      F1-score: 0.5766
+  - Regression:
+      MAE:  5.7551
+      MSE: 59.9102
+      RMSE:  7.7402
+      R2: -0.8190
+
+  - Correlation:
+      Spearman correlation: 0.169094
+
+Epoch: 8  Current Best Test for f1-score: 0.5840707964601769 at epoch 5
+Epoch: 8  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.113s | LR: 0.000500 | Average Loss:  0.07502 | Accuracy: 92.83% (1217/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  648 | FP:    3 |
+    -----------------------
+    | FN:   91 | TN:  569 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.8769
+      TNR/Specificity: 0.9948
+      Precision: 0.9954
+      Recall: 0.8769
+      F1-score: 0.9324
+  - Regression:
+      MAE:  2.3814
+      MSE:  9.8932
+      RMSE:  3.1453
+      R2:  0.7717
+
+  - Correlation:
+      Spearman correlation: 0.954010
+
+  End of test:
+  | time:    3.950s | LR: 0.000500 | Average Loss:      nan | Accuracy: 80.82% (396/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   28 |
+    -----------------------
+    | FN:   66 | TN:  328 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.9213
+      Precision: 0.7083
+      Recall: 0.5075
+      F1-score: 0.5913
+  - Regression:
+      MAE:  5.6469
+      MSE: 57.0673
+      RMSE:  7.5543
+      R2: -0.7327
+
+  - Correlation:
+      Spearman correlation: 0.204585
+
+--------- New best found for f1-score at epoch 8 !!! ---------
+- train score: 0.932374
+- test score: 0.591304
+--------- New best found for f1-score at epoch 8 !!! ---------
+
+Epoch: 9  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 9  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.503s | LR: 0.000500 | Average Loss:  0.06492 | Accuracy: 94.58% (1240/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  658 | FP:    2 |
+    -----------------------
+    | FN:   69 | TN:  582 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9051
+      TNR/Specificity: 0.9966
+      Precision: 0.9970
+      Recall: 0.9051
+      F1-score: 0.9488
+  - Regression:
+      MAE:  2.0564
+      MSE:  7.5606
+      RMSE:  2.7497
+      R2:  0.8250
+
+  - Correlation:
+      Spearman correlation: 0.962665
+
+  End of test:
+  | time:    3.871s | LR: 0.000500 | Average Loss:      nan | Accuracy: 81.43% (399/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   21 |
+    -----------------------
+    | FN:   70 | TN:  335 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9410
+      Precision: 0.7529
+      Recall: 0.4776
+      F1-score: 0.5845
+  - Regression:
+      MAE:  5.3755
+      MSE: 51.4857
+      RMSE:  7.1754
+      R2: -0.5632
+
+  - Correlation:
+      Spearman correlation: 0.226584
+
+Epoch: 10  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 10  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.139s | LR: 0.000450 | Average Loss:  0.05631 | Accuracy: 95.35% (1250/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  642 | FP:    5 |
+    -----------------------
+    | FN:   56 | TN:  608 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9198
+      TNR/Specificity: 0.9918
+      Precision: 0.9923
+      Recall: 0.9198
+      F1-score: 0.9546
+  - Regression:
+      MAE:  1.6140
+      MSE:  5.2449
+      RMSE:  2.2902
+      R2:  0.8742
+
+  - Correlation:
+      Spearman correlation: 0.969740
+
+  End of test:
+  | time:    4.037s | LR: 0.000450 | Average Loss:      nan | Accuracy: 80.00% (392/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   31 |
+    -----------------------
+    | FN:   67 | TN:  325 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9129
+      Precision: 0.6837
+      Recall: 0.5000
+      F1-score: 0.5776
+  - Regression:
+      MAE:  5.5163
+      MSE: 51.8061
+      RMSE:  7.1976
+      R2: -0.5730
+
+  - Correlation:
+      Spearman correlation: 0.187617
+
+Epoch: 11  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 11  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.730s | LR: 0.000450 | Average Loss:  0.05085 | Accuracy: 94.58% (1240/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  657 | FP:   11 |
+    -----------------------
+    | FN:   60 | TN:  583 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9163
+      TNR/Specificity: 0.9815
+      Precision: 0.9835
+      Recall: 0.9163
+      F1-score: 0.9487
+  - Regression:
+      MAE:  1.4264
+      MSE:  4.1983
+      RMSE:  2.0490
+      R2:  0.9026
+
+  - Correlation:
+      Spearman correlation: 0.973433
+
+  End of test:
+  | time:    3.948s | LR: 0.000450 | Average Loss:      nan | Accuracy: 79.59% (390/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   33 |
+    -----------------------
+    | FN:   67 | TN:  323 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9073
+      Precision: 0.6700
+      Recall: 0.5000
+      F1-score: 0.5726
+  - Regression:
+      MAE:  5.6796
+      MSE: 52.5653
+      RMSE:  7.2502
+      R2: -0.5960
+
+  - Correlation:
+      Spearman correlation: 0.173422
+
+Epoch: 12  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 12  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.168s | LR: 0.000450 | Average Loss:  0.04550 | Accuracy: 93.90% (1231/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  640 | FP:    9 |
+    -----------------------
+    | FN:   71 | TN:  591 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9001
+      TNR/Specificity: 0.9850
+      Precision: 0.9861
+      Recall: 0.9001
+      F1-score: 0.9412
+  - Regression:
+      MAE:  1.4226
+      MSE:  4.0404
+      RMSE:  2.0101
+      R2:  0.9060
+
+  - Correlation:
+      Spearman correlation: 0.971585
+
+  End of test:
+  | time:    3.750s | LR: 0.000450 | Average Loss:      nan | Accuracy: 79.59% (390/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   31 |
+    -----------------------
+    | FN:   69 | TN:  325 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9129
+      Precision: 0.6771
+      Recall: 0.4851
+      F1-score: 0.5652
+  - Regression:
+      MAE:  5.4918
+      MSE: 51.5653
+      RMSE:  7.1809
+      R2: -0.5656
+
+  - Correlation:
+      Spearman correlation: 0.206542
+
+Epoch: 13  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 13  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.925s | LR: 0.000450 | Average Loss:  0.04274 | Accuracy: 94.51% (1239/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  647 | FP:    3 |
+    -----------------------
+    | FN:   69 | TN:  592 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9036
+      TNR/Specificity: 0.9950
+      Precision: 0.9954
+      Recall: 0.9036
+      F1-score: 0.9473
+  - Regression:
+      MAE:  1.2738
+      MSE:  3.4111
+      RMSE:  1.8469
+      R2:  0.9217
+
+  - Correlation:
+      Spearman correlation: 0.976030
+
+  End of test:
+  | time:    4.096s | LR: 0.000450 | Average Loss:      nan | Accuracy: 78.16% (383/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   39 |
+    -----------------------
+    | FN:   68 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.8904
+      Precision: 0.6286
+      Recall: 0.4925
+      F1-score: 0.5523
+  - Regression:
+      MAE:  5.4184
+      MSE: 49.7898
+      RMSE:  7.0562
+      R2: -0.5117
+
+  - Correlation:
+      Spearman correlation: 0.226975
+
+Epoch: 14  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 14  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.677s | LR: 0.000450 | Average Loss:  0.03874 | Accuracy: 94.74% (1242/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  664 | FP:    3 |
+    -----------------------
+    | FN:   66 | TN:  578 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9096
+      TNR/Specificity: 0.9948
+      Precision: 0.9955
+      Recall: 0.9096
+      F1-score: 0.9506
+  - Regression:
+      MAE:  1.1953
+      MSE:  3.1739
+      RMSE:  1.7815
+      R2:  0.9246
+
+  - Correlation:
+      Spearman correlation: 0.981029
+
+  End of test:
+  | time:    3.680s | LR: 0.000450 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   38 |
+    -----------------------
+    | FN:   66 | TN:  318 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8933
+      Precision: 0.6415
+      Recall: 0.5075
+      F1-score: 0.5667
+  - Regression:
+      MAE:  5.4878
+      MSE: 49.4592
+      RMSE:  7.0327
+      R2: -0.5017
+
+  - Correlation:
+      Spearman correlation: 0.207171
+
+Epoch: 15  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 15  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.767s | LR: 0.000450 | Average Loss:  0.03661 | Accuracy: 95.12% (1247/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  664 | FP:   10 |
+    -----------------------
+    | FN:   54 | TN:  583 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9248
+      TNR/Specificity: 0.9831
+      Precision: 0.9852
+      Recall: 0.9248
+      F1-score: 0.9540
+  - Regression:
+      MAE:  1.0244
+      MSE:  2.5439
+      RMSE:  1.5949
+      R2:  0.9364
+
+  - Correlation:
+      Spearman correlation: 0.981719
+
+  End of test:
+  | time:    3.473s | LR: 0.000450 | Average Loss:      nan | Accuracy: 77.96% (382/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   39 |
+    -----------------------
+    | FN:   69 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8904
+      Precision: 0.6250
+      Recall: 0.4851
+      F1-score: 0.5462
+  - Regression:
+      MAE:  5.5020
+      MSE: 48.6776
+      RMSE:  6.9769
+      R2: -0.4780
+
+  - Correlation:
+      Spearman correlation: 0.204300
+
+Epoch: 16  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 16  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.769s | LR: 0.000450 | Average Loss:  0.03377 | Accuracy: 96.19% (1261/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  682 | FP:    3 |
+    -----------------------
+    | FN:   47 | TN:  579 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9355
+      TNR/Specificity: 0.9948
+      Precision: 0.9956
+      Recall: 0.9355
+      F1-score: 0.9646
+  - Regression:
+      MAE:  0.9436
+      MSE:  2.3852
+      RMSE:  1.5444
+      R2:  0.9421
+
+  - Correlation:
+      Spearman correlation: 0.983378
+
+  End of test:
+  | time:    3.951s | LR: 0.000450 | Average Loss:      nan | Accuracy: 77.35% (379/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   42 |
+    -----------------------
+    | FN:   69 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8820
+      Precision: 0.6075
+      Recall: 0.4851
+      F1-score: 0.5394
+  - Regression:
+      MAE:  5.4878
+      MSE: 49.6633
+      RMSE:  7.0472
+      R2: -0.5079
+
+  - Correlation:
+      Spearman correlation: 0.226484
+
+Epoch: 17  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 17  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.361s | LR: 0.000450 | Average Loss:  0.03280 | Accuracy: 96.49% (1265/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  686 | FP:    8 |
+    -----------------------
+    | FN:   38 | TN:  579 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9475
+      TNR/Specificity: 0.9864
+      Precision: 0.9885
+      Recall: 0.9475
+      F1-score: 0.9676
+  - Regression:
+      MAE:  0.9908
+      MSE:  2.2921
+      RMSE:  1.5140
+      R2:  0.9455
+
+  - Correlation:
+      Spearman correlation: 0.983749
+
+  End of test:
+  | time:    3.645s | LR: 0.000450 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   37 |
+    -----------------------
+    | FN:   69 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8961
+      Precision: 0.6373
+      Recall: 0.4851
+      F1-score: 0.5508
+  - Regression:
+      MAE:  5.4367
+      MSE: 48.0122
+      RMSE:  6.9291
+      R2: -0.4578
+
+  - Correlation:
+      Spearman correlation: 0.233923
+
+Epoch: 18  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 18  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.380s | LR: 0.000450 | Average Loss:  0.03017 | Accuracy: 95.96% (1258/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  650 | FP:   14 |
+    -----------------------
+    | FN:   39 | TN:  608 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9434
+      TNR/Specificity: 0.9775
+      Precision: 0.9789
+      Recall: 0.9434
+      F1-score: 0.9608
+  - Regression:
+      MAE:  0.8520
+      MSE:  1.7857
+      RMSE:  1.3363
+      R2:  0.9579
+
+  - Correlation:
+      Spearman correlation: 0.984962
+
+  End of test:
+  | time:    3.690s | LR: 0.000450 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   34 |
+    -----------------------
+    | FN:   71 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9045
+      Precision: 0.6495
+      Recall: 0.4701
+      F1-score: 0.5455
+  - Regression:
+      MAE:  5.4816
+      MSE: 48.7347
+      RMSE:  6.9810
+      R2: -0.4797
+
+  - Correlation:
+      Spearman correlation: 0.214506
+
+Epoch: 19  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 19  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.560s | LR: 0.000450 | Average Loss:  0.02976 | Accuracy: 95.58% (1253/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  681 | FP:    1 |
+    -----------------------
+    | FN:   57 | TN:  572 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9228
+      TNR/Specificity: 0.9983
+      Precision: 0.9985
+      Recall: 0.9228
+      F1-score: 0.9592
+  - Regression:
+      MAE:  0.9863
+      MSE:  2.3745
+      RMSE:  1.5409
+      R2:  0.9435
+
+  - Correlation:
+      Spearman correlation: 0.986023
+
+  End of test:
+  | time:    3.813s | LR: 0.000450 | Average Loss:      nan | Accuracy: 76.94% (377/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   47 |
+    -----------------------
+    | FN:   66 | TN:  309 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8680
+      Precision: 0.5913
+      Recall: 0.5075
+      F1-score: 0.5462
+  - Regression:
+      MAE:  5.4857
+      MSE: 47.3918
+      RMSE:  6.8842
+      R2: -0.4389
+
+  - Correlation:
+      Spearman correlation: 0.234596
+
+Epoch: 20  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 20  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.543s | LR: 0.000405 | Average Loss:  0.03091 | Accuracy: 96.41% (1264/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  655 | FP:   15 |
+    -----------------------
+    | FN:   32 | TN:  609 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9534
+      TNR/Specificity: 0.9760
+      Precision: 0.9776
+      Recall: 0.9534
+      F1-score: 0.9654
+  - Regression:
+      MAE:  0.8291
+      MSE:  1.7841
+      RMSE:  1.3357
+      R2:  0.9566
+
+  - Correlation:
+      Spearman correlation: 0.983287
+
+  End of test:
+  | time:    3.630s | LR: 0.000405 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   35 |
+    -----------------------
+    | FN:   71 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9017
+      Precision: 0.6429
+      Recall: 0.4701
+      F1-score: 0.5431
+  - Regression:
+      MAE:  5.4184
+      MSE: 48.8510
+      RMSE:  6.9894
+      R2: -0.4832
+
+  - Correlation:
+      Spearman correlation: 0.230678
+
+Epoch: 21  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 21  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   24.933s | LR: 0.000405 | Average Loss:  0.02824 | Accuracy: 97.10% (1273/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  676 | FP:    3 |
+    -----------------------
+    | FN:   35 | TN:  597 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9508
+      TNR/Specificity: 0.9950
+      Precision: 0.9956
+      Recall: 0.9508
+      F1-score: 0.9727
+  - Regression:
+      MAE:  0.9474
+      MSE:  2.3234
+      RMSE:  1.5243
+      R2:  0.9452
+
+  - Correlation:
+      Spearman correlation: 0.983853
+
+  End of test:
+  | time:    3.950s | LR: 0.000405 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   41 |
+    -----------------------
+    | FN:   65 | TN:  315 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8848
+      Precision: 0.6273
+      Recall: 0.5149
+      F1-score: 0.5656
+  - Regression:
+      MAE:  5.4367
+      MSE: 46.9714
+      RMSE:  6.8536
+      R2: -0.4262
+
+  - Correlation:
+      Spearman correlation: 0.226165
+
+Epoch: 22  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 22  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.060s | LR: 0.000405 | Average Loss:  0.02812 | Accuracy: 97.48% (1278/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  654 | FP:   10 |
+    -----------------------
+    | FN:   23 | TN:  624 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9660
+      TNR/Specificity: 0.9842
+      Precision: 0.9849
+      Recall: 0.9660
+      F1-score: 0.9754
+  - Regression:
+      MAE:  0.7666
+      MSE:  1.7262
+      RMSE:  1.3138
+      R2:  0.9588
+
+  - Correlation:
+      Spearman correlation: 0.983244
+
+  End of test:
+  | time:    3.863s | LR: 0.000405 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   36 |
+    -----------------------
+    | FN:   69 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8989
+      Precision: 0.6436
+      Recall: 0.4851
+      F1-score: 0.5532
+  - Regression:
+      MAE:  5.3694
+      MSE: 46.9776
+      RMSE:  6.8540
+      R2: -0.4264
+
+  - Correlation:
+      Spearman correlation: 0.242662
+
+Epoch: 23  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 23  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.837s | LR: 0.000405 | Average Loss:  0.02684 | Accuracy: 96.64% (1267/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  717 | FP:    4 |
+    -----------------------
+    | FN:   40 | TN:  550 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9472
+      TNR/Specificity: 0.9928
+      Precision: 0.9945
+      Recall: 0.9472
+      F1-score: 0.9702
+  - Regression:
+      MAE:  0.7590
+      MSE:  1.5172
+      RMSE:  1.2317
+      R2:  0.9659
+
+  - Correlation:
+      Spearman correlation: 0.987557
+
+  End of test:
+  | time:    3.623s | LR: 0.000405 | Average Loss:      nan | Accuracy: 78.16% (383/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   42 |
+    -----------------------
+    | FN:   65 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8820
+      Precision: 0.6216
+      Recall: 0.5149
+      F1-score: 0.5633
+  - Regression:
+      MAE:  5.4163
+      MSE: 47.8776
+      RMSE:  6.9194
+      R2: -0.4537
+
+  - Correlation:
+      Spearman correlation: 0.224328
+
+Epoch: 24  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 24  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.641s | LR: 0.000405 | Average Loss:  0.02655 | Accuracy: 97.94% (1284/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  671 | FP:    7 |
+    -----------------------
+    | FN:   20 | TN:  613 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9711
+      TNR/Specificity: 0.9887
+      Precision: 0.9897
+      Recall: 0.9711
+      F1-score: 0.9803
+  - Regression:
+      MAE:  0.7613
+      MSE:  1.6476
+      RMSE:  1.2836
+      R2:  0.9623
+
+  - Correlation:
+      Spearman correlation: 0.985715
+
+  End of test:
+  | time:    3.585s | LR: 0.000405 | Average Loss:      nan | Accuracy: 78.16% (383/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   36 |
+    -----------------------
+    | FN:   71 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.8989
+      Precision: 0.6364
+      Recall: 0.4701
+      F1-score: 0.5408
+  - Regression:
+      MAE:  5.3245
+      MSE: 46.5857
+      RMSE:  6.8254
+      R2: -0.4145
+
+  - Correlation:
+      Spearman correlation: 0.235478
+
+Epoch: 25  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 25  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   24.940s | LR: 0.000405 | Average Loss:  0.02434 | Accuracy: 97.56% (1279/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  705 | FP:    2 |
+    -----------------------
+    | FN:   30 | TN:  574 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9592
+      TNR/Specificity: 0.9965
+      Precision: 0.9972
+      Recall: 0.9592
+      F1-score: 0.9778
+  - Regression:
+      MAE:  0.6491
+      MSE:  1.4043
+      RMSE:  1.1850
+      R2:  0.9669
+
+  - Correlation:
+      Spearman correlation: 0.989533
+
+  End of test:
+  | time:    3.907s | LR: 0.000405 | Average Loss:      nan | Accuracy: 76.94% (377/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   46 |
+    -----------------------
+    | FN:   67 | TN:  310 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8708
+      Precision: 0.5929
+      Recall: 0.5000
+      F1-score: 0.5425
+  - Regression:
+      MAE:  5.4735
+      MSE: 47.6980
+      RMSE:  6.9064
+      R2: -0.4482
+
+  - Correlation:
+      Spearman correlation: 0.206849
+
+Epoch: 26  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 26  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.553s | LR: 0.000405 | Average Loss:  0.02560 | Accuracy: 97.56% (1279/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  695 | FP:    6 |
+    -----------------------
+    | FN:   26 | TN:  584 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9639
+      TNR/Specificity: 0.9898
+      Precision: 0.9914
+      Recall: 0.9639
+      F1-score: 0.9775
+  - Regression:
+      MAE:  0.6629
+      MSE:  1.3936
+      RMSE:  1.1805
+      R2:  0.9666
+
+  - Correlation:
+      Spearman correlation: 0.986975
+
+  End of test:
+  | time:    3.854s | LR: 0.000405 | Average Loss:      nan | Accuracy: 76.94% (377/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   44 |
+    -----------------------
+    | FN:   69 | TN:  312 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8764
+      Precision: 0.5963
+      Recall: 0.4851
+      F1-score: 0.5350
+  - Regression:
+      MAE:  5.4122
+      MSE: 47.8408
+      RMSE:  6.9167
+      R2: -0.4526
+
+  - Correlation:
+      Spearman correlation: 0.225183
+
+Epoch: 27  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 27  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.502s | LR: 0.000405 | Average Loss:  0.02354 | Accuracy: 97.64% (1280/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  709 | FP:    2 |
+    -----------------------
+    | FN:   29 | TN:  571 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9607
+      TNR/Specificity: 0.9965
+      Precision: 0.9972
+      Recall: 0.9607
+      F1-score: 0.9786
+  - Regression:
+      MAE:  0.7216
+      MSE:  1.5439
+      RMSE:  1.2425
+      R2:  0.9634
+
+  - Correlation:
+      Spearman correlation: 0.989451
+
+  End of test:
+  | time:    3.601s | LR: 0.000405 | Average Loss:      nan | Accuracy: 77.55% (380/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   43 |
+    -----------------------
+    | FN:   67 | TN:  313 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8792
+      Precision: 0.6091
+      Recall: 0.5000
+      F1-score: 0.5492
+  - Regression:
+      MAE:  5.3653
+      MSE: 46.5857
+      RMSE:  6.8254
+      R2: -0.4145
+
+  - Correlation:
+      Spearman correlation: 0.227053
+
+Epoch: 28  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 28  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.948s | LR: 0.000405 | Average Loss:  0.02306 | Accuracy: 97.41% (1277/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  695 | FP:    9 |
+    -----------------------
+    | FN:   25 | TN:  582 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9653
+      TNR/Specificity: 0.9848
+      Precision: 0.9872
+      Recall: 0.9653
+      F1-score: 0.9761
+  - Regression:
+      MAE:  0.6049
+      MSE:  1.3082
+      RMSE:  1.1437
+      R2:  0.9695
+
+  - Correlation:
+      Spearman correlation: 0.988601
+
+  End of test:
+  | time:    3.848s | LR: 0.000405 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   40 |
+    -----------------------
+    | FN:   66 | TN:  316 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8876
+      Precision: 0.6296
+      Recall: 0.5075
+      F1-score: 0.5620
+  - Regression:
+      MAE:  5.3388
+      MSE: 46.3347
+      RMSE:  6.8070
+      R2: -0.4068
+
+  - Correlation:
+      Spearman correlation: 0.239451
+
+Epoch: 29  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 29  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.283s | LR: 0.000405 | Average Loss:  0.02345 | Accuracy: 97.64% (1280/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  668 | FP:    5 |
+    -----------------------
+    | FN:   26 | TN:  612 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9625
+      TNR/Specificity: 0.9919
+      Precision: 0.9926
+      Recall: 0.9625
+      F1-score: 0.9773
+  - Regression:
+      MAE:  0.6903
+      MSE:  1.5309
+      RMSE:  1.2373
+      R2:  0.9635
+
+  - Correlation:
+      Spearman correlation: 0.986580
+
+  End of test:
+  | time:    4.172s | LR: 0.000405 | Average Loss:      nan | Accuracy: 79.39% (389/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   33 |
+    -----------------------
+    | FN:   68 | TN:  323 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.9073
+      Precision: 0.6667
+      Recall: 0.4925
+      F1-score: 0.5665
+  - Regression:
+      MAE:  5.2918
+      MSE: 46.5163
+      RMSE:  6.8203
+      R2: -0.4123
+
+  - Correlation:
+      Spearman correlation: 0.221084
+
+Epoch: 30  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 30  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.594s | LR: 0.000365 | Average Loss:  0.02224 | Accuracy: 96.34% (1263/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  701 | FP:    6 |
+    -----------------------
+    | FN:   42 | TN:  562 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9435
+      TNR/Specificity: 0.9894
+      Precision: 0.9915
+      Recall: 0.9435
+      F1-score: 0.9669
+  - Regression:
+      MAE:  0.6438
+      MSE:  1.4081
+      RMSE:  1.1866
+      R2:  0.9665
+
+  - Correlation:
+      Spearman correlation: 0.988715
+
+  End of test:
+  | time:    3.721s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   71 | FP:   42 |
+    -----------------------
+    | FN:   63 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5299
+      TNR/Specificity: 0.8820
+      Precision: 0.6283
+      Recall: 0.5299
+      F1-score: 0.5749
+  - Regression:
+      MAE:  5.3633
+      MSE: 46.5633
+      RMSE:  6.8237
+      R2: -0.4138
+
+  - Correlation:
+      Spearman correlation: 0.216065
+
+Epoch: 31  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 31  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.814s | LR: 0.000365 | Average Loss:  0.02214 | Accuracy: 98.17% (1287/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  703 | FP:    5 |
+    -----------------------
+    | FN:   19 | TN:  584 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9737
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9737
+      F1-score: 0.9832
+  - Regression:
+      MAE:  0.5309
+      MSE:  1.0892
+      RMSE:  1.0437
+      R2:  0.9746
+
+  - Correlation:
+      Spearman correlation: 0.989915
+
+  End of test:
+  | time:    3.873s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   36 |
+    -----------------------
+    | FN:   68 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.8989
+      Precision: 0.6471
+      Recall: 0.4925
+      F1-score: 0.5593
+  - Regression:
+      MAE:  5.3755
+      MSE: 47.0735
+      RMSE:  6.8610
+      R2: -0.4293
+
+  - Correlation:
+      Spearman correlation: 0.225009
+
+Epoch: 32  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 32  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   24.952s | LR: 0.000365 | Average Loss:  0.02264 | Accuracy: 97.18% (1274/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  696 | FP:    4 |
+    -----------------------
+    | FN:   33 | TN:  578 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9547
+      TNR/Specificity: 0.9931
+      Precision: 0.9943
+      Recall: 0.9547
+      F1-score: 0.9741
+  - Regression:
+      MAE:  0.6834
+      MSE:  1.5332
+      RMSE:  1.2382
+      R2:  0.9648
+
+  - Correlation:
+      Spearman correlation: 0.987329
+
+  End of test:
+  | time:    3.635s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   38 |
+    -----------------------
+    | FN:   68 | TN:  318 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.8933
+      Precision: 0.6346
+      Recall: 0.4925
+      F1-score: 0.5546
+  - Regression:
+      MAE:  5.3265
+      MSE: 47.2490
+      RMSE:  6.8738
+      R2: -0.4346
+
+  - Correlation:
+      Spearman correlation: 0.226399
+
+Epoch: 33  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 33  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.409s | LR: 0.000365 | Average Loss:  0.02053 | Accuracy: 98.02% (1285/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  716 | FP:    8 |
+    -----------------------
+    | FN:   18 | TN:  569 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9755
+      TNR/Specificity: 0.9861
+      Precision: 0.9890
+      Recall: 0.9755
+      F1-score: 0.9822
+  - Regression:
+      MAE:  0.6308
+      MSE:  1.3127
+      RMSE:  1.1457
+      R2:  0.9695
+
+  - Correlation:
+      Spearman correlation: 0.990459
+
+  End of test:
+  | time:    3.897s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   39 |
+    -----------------------
+    | FN:   67 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8904
+      Precision: 0.6321
+      Recall: 0.5000
+      F1-score: 0.5583
+  - Regression:
+      MAE:  5.3163
+      MSE: 44.9163
+      RMSE:  6.7020
+      R2: -0.3638
+
+  - Correlation:
+      Spearman correlation: 0.240939
+
+Epoch: 34  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 34  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.409s | LR: 0.000365 | Average Loss:  0.02126 | Accuracy: 98.25% (1288/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  688 | FP:    8 |
+    -----------------------
+    | FN:   15 | TN:  600 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9787
+      TNR/Specificity: 0.9868
+      Precision: 0.9885
+      Recall: 0.9787
+      F1-score: 0.9836
+  - Regression:
+      MAE:  0.5805
+      MSE:  1.1831
+      RMSE:  1.0877
+      R2:  0.9720
+
+  - Correlation:
+      Spearman correlation: 0.988770
+
+  End of test:
+  | time:    3.478s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   34 |
+    -----------------------
+    | FN:   71 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9045
+      Precision: 0.6495
+      Recall: 0.4701
+      F1-score: 0.5455
+  - Regression:
+      MAE:  5.3592
+      MSE: 47.1551
+      RMSE:  6.8670
+      R2: -0.4317
+
+  - Correlation:
+      Spearman correlation: 0.230729
+
+Epoch: 35  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 35  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.417s | LR: 0.000365 | Average Loss:  0.02090 | Accuracy: 98.25% (1288/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  676 | FP:    6 |
+    -----------------------
+    | FN:   17 | TN:  612 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9755
+      TNR/Specificity: 0.9903
+      Precision: 0.9912
+      Recall: 0.9755
+      F1-score: 0.9833
+  - Regression:
+      MAE:  0.5950
+      MSE:  1.2647
+      RMSE:  1.1246
+      R2:  0.9695
+
+  - Correlation:
+      Spearman correlation: 0.988578
+
+  End of test:
+  | time:    3.625s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.16% (383/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   40 |
+    -----------------------
+    | FN:   67 | TN:  316 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8876
+      Precision: 0.6262
+      Recall: 0.5000
+      F1-score: 0.5560
+  - Regression:
+      MAE:  5.2776
+      MSE: 45.0163
+      RMSE:  6.7094
+      R2: -0.3668
+
+  - Correlation:
+      Spearman correlation: 0.233974
+
+Epoch: 36  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 36  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.860s | LR: 0.000365 | Average Loss:  0.02153 | Accuracy: 97.79% (1282/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  691 | FP:    2 |
+    -----------------------
+    | FN:   27 | TN:  591 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9624
+      TNR/Specificity: 0.9966
+      Precision: 0.9971
+      Recall: 0.9624
+      F1-score: 0.9794
+  - Regression:
+      MAE:  0.5973
+      MSE:  1.2471
+      RMSE:  1.1168
+      R2:  0.9707
+
+  - Correlation:
+      Spearman correlation: 0.989290
+
+  End of test:
+  | time:    3.922s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.16% (383/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   39 |
+    -----------------------
+    | FN:   68 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.8904
+      Precision: 0.6286
+      Recall: 0.4925
+      F1-score: 0.5523
+  - Regression:
+      MAE:  5.2714
+      MSE: 45.8429
+      RMSE:  6.7707
+      R2: -0.3919
+
+  - Correlation:
+      Spearman correlation: 0.239100
+
+Epoch: 37  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 37  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.660s | LR: 0.000365 | Average Loss:  0.01999 | Accuracy: 98.40% (1290/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    5 |
+    -----------------------
+    | FN:   16 | TN:  592 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9776
+      TNR/Specificity: 0.9916
+      Precision: 0.9929
+      Recall: 0.9776
+      F1-score: 0.9852
+  - Regression:
+      MAE:  0.5919
+      MSE:  1.2113
+      RMSE:  1.1006
+      R2:  0.9711
+
+  - Correlation:
+      Spearman correlation: 0.988626
+
+  End of test:
+  | time:    3.497s | LR: 0.000365 | Average Loss:      nan | Accuracy: 77.76% (381/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   41 |
+    -----------------------
+    | FN:   68 | TN:  315 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.8848
+      Precision: 0.6168
+      Recall: 0.4925
+      F1-score: 0.5477
+  - Regression:
+      MAE:  5.2224
+      MSE: 44.5000
+      RMSE:  6.6708
+      R2: -0.3511
+
+  - Correlation:
+      Spearman correlation: 0.247270
+
+Epoch: 38  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 38  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.112s | LR: 0.000365 | Average Loss:  0.01920 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  711 | FP:    7 |
+    -----------------------
+    | FN:   21 | TN:  572 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9713
+      TNR/Specificity: 0.9879
+      Precision: 0.9903
+      Recall: 0.9713
+      F1-score: 0.9807
+  - Regression:
+      MAE:  0.5927
+      MSE:  1.2777
+      RMSE:  1.1303
+      R2:  0.9705
+
+  - Correlation:
+      Spearman correlation: 0.989306
+
+  End of test:
+  | time:    3.580s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   37 |
+    -----------------------
+    | FN:   68 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.8961
+      Precision: 0.6408
+      Recall: 0.4925
+      F1-score: 0.5570
+  - Regression:
+      MAE:  5.2429
+      MSE: 45.9000
+      RMSE:  6.7750
+      R2: -0.3936
+
+  - Correlation:
+      Spearman correlation: 0.237192
+
+Epoch: 39  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 39  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.919s | LR: 0.000365 | Average Loss:  0.02103 | Accuracy: 97.48% (1278/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  674 | FP:    7 |
+    -----------------------
+    | FN:   26 | TN:  604 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9629
+      TNR/Specificity: 0.9885
+      Precision: 0.9897
+      Recall: 0.9629
+      F1-score: 0.9761
+  - Regression:
+      MAE:  0.5614
+      MSE:  1.1808
+      RMSE:  1.0866
+      R2:  0.9714
+
+  - Correlation:
+      Spearman correlation: 0.988521
+
+  End of test:
+  | time:    3.370s | LR: 0.000365 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   39 |
+    -----------------------
+    | FN:   66 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8904
+      Precision: 0.6355
+      Recall: 0.5075
+      F1-score: 0.5643
+  - Regression:
+      MAE:  5.2306
+      MSE: 44.3816
+      RMSE:  6.6620
+      R2: -0.3475
+
+  - Correlation:
+      Spearman correlation: 0.246417
+
+Epoch: 40  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 40  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.219s | LR: 0.000328 | Average Loss:  0.01937 | Accuracy: 97.33% (1276/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  689 | FP:    2 |
+    -----------------------
+    | FN:   33 | TN:  587 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9543
+      TNR/Specificity: 0.9966
+      Precision: 0.9971
+      Recall: 0.9543
+      F1-score: 0.9752
+  - Regression:
+      MAE:  0.5797
+      MSE:  1.1716
+      RMSE:  1.0824
+      R2:  0.9712
+
+  - Correlation:
+      Spearman correlation: 0.990401
+
+  End of test:
+  | time:    3.783s | LR: 0.000328 | Average Loss:      nan | Accuracy: 77.55% (380/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   41 |
+    -----------------------
+    | FN:   69 | TN:  315 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8848
+      Precision: 0.6132
+      Recall: 0.4851
+      F1-score: 0.5417
+  - Regression:
+      MAE:  5.2388
+      MSE: 44.8306
+      RMSE:  6.6956
+      R2: -0.3612
+
+  - Correlation:
+      Spearman correlation: 0.243001
+
+Epoch: 41  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 41  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.232s | LR: 0.000328 | Average Loss:  0.01808 | Accuracy: 97.25% (1275/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  701 | FP:    6 |
+    -----------------------
+    | FN:   30 | TN:  574 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9590
+      TNR/Specificity: 0.9897
+      Precision: 0.9915
+      Recall: 0.9590
+      F1-score: 0.9750
+  - Regression:
+      MAE:  0.4805
+      MSE:  0.9458
+      RMSE:  0.9725
+      R2:  0.9779
+
+  - Correlation:
+      Spearman correlation: 0.991511
+
+  End of test:
+  | time:    3.795s | LR: 0.000328 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   36 |
+    -----------------------
+    | FN:   66 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8989
+      Precision: 0.6538
+      Recall: 0.5075
+      F1-score: 0.5714
+  - Regression:
+      MAE:  5.2714
+      MSE: 46.4551
+      RMSE:  6.8158
+      R2: -0.4105
+
+  - Correlation:
+      Spearman correlation: 0.232828
+
+Epoch: 42  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 42  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.181s | LR: 0.000328 | Average Loss:  0.01969 | Accuracy: 97.41% (1277/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  667 | FP:    1 |
+    -----------------------
+    | FN:   33 | TN:  610 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9529
+      TNR/Specificity: 0.9984
+      Precision: 0.9985
+      Recall: 0.9529
+      F1-score: 0.9751
+  - Regression:
+      MAE:  0.6552
+      MSE:  1.5217
+      RMSE:  1.2336
+      R2:  0.9628
+
+  - Correlation:
+      Spearman correlation: 0.987232
+
+  End of test:
+  | time:    3.664s | LR: 0.000328 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   41 |
+    -----------------------
+    | FN:   65 | TN:  315 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8848
+      Precision: 0.6273
+      Recall: 0.5149
+      F1-score: 0.5656
+  - Regression:
+      MAE:  5.2429
+      MSE: 45.2796
+      RMSE:  6.7290
+      R2: -0.3748
+
+  - Correlation:
+      Spearman correlation: 0.241445
+
+Epoch: 43  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 43  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.761s | LR: 0.000328 | Average Loss:  0.01920 | Accuracy: 96.95% (1271/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  695 | FP:    5 |
+    -----------------------
+    | FN:   35 | TN:  576 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9521
+      TNR/Specificity: 0.9914
+      Precision: 0.9929
+      Recall: 0.9521
+      F1-score: 0.9720
+  - Regression:
+      MAE:  0.5561
+      MSE:  1.2090
+      RMSE:  1.0995
+      R2:  0.9713
+
+  - Correlation:
+      Spearman correlation: 0.989874
+
+  End of test:
+  | time:    4.211s | LR: 0.000328 | Average Loss:      nan | Accuracy: 76.94% (377/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   47 |
+    -----------------------
+    | FN:   66 | TN:  309 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8680
+      Precision: 0.5913
+      Recall: 0.5075
+      F1-score: 0.5462
+  - Regression:
+      MAE:  5.2408
+      MSE: 44.4408
+      RMSE:  6.6664
+      R2: -0.3493
+
+  - Correlation:
+      Spearman correlation: 0.238405
+
+Epoch: 44  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 44  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.425s | LR: 0.000328 | Average Loss:  0.01893 | Accuracy: 98.47% (1291/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  690 | FP:   11 |
+    -----------------------
+    | FN:    9 | TN:  601 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9871
+      TNR/Specificity: 0.9820
+      Precision: 0.9843
+      Recall: 0.9871
+      F1-score: 0.9857
+  - Regression:
+      MAE:  0.5416
+      MSE:  1.1655
+      RMSE:  1.0796
+      R2:  0.9728
+
+  - Correlation:
+      Spearman correlation: 0.989258
+
+  End of test:
+  | time:    3.848s | LR: 0.000328 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   36 |
+    -----------------------
+    | FN:   67 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8989
+      Precision: 0.6505
+      Recall: 0.5000
+      F1-score: 0.5654
+  - Regression:
+      MAE:  5.2571
+      MSE: 45.7224
+      RMSE:  6.7618
+      R2: -0.3882
+
+  - Correlation:
+      Spearman correlation: 0.228863
+
+Epoch: 45  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 45  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.701s | LR: 0.000328 | Average Loss:  0.01854 | Accuracy: 97.64% (1280/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  695 | FP:    3 |
+    -----------------------
+    | FN:   28 | TN:  585 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9613
+      TNR/Specificity: 0.9949
+      Precision: 0.9957
+      Recall: 0.9613
+      F1-score: 0.9782
+  - Regression:
+      MAE:  0.5591
+      MSE:  1.2380
+      RMSE:  1.1126
+      R2:  0.9704
+
+  - Correlation:
+      Spearman correlation: 0.989211
+
+  End of test:
+  | time:    3.582s | LR: 0.000328 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   36 |
+    -----------------------
+    | FN:   69 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8989
+      Precision: 0.6436
+      Recall: 0.4851
+      F1-score: 0.5532
+  - Regression:
+      MAE:  5.1796
+      MSE: 43.7429
+      RMSE:  6.6138
+      R2: -0.3281
+
+  - Correlation:
+      Spearman correlation: 0.228518
+
+Epoch: 46  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 46  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.303s | LR: 0.000328 | Average Loss:  0.01931 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  684 | FP:    0 |
+    -----------------------
+    | FN:   28 | TN:  599 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9607
+      TNR/Specificity: 1.0000
+      Precision: 1.0000
+      Recall: 0.9607
+      F1-score: 0.9799
+  - Regression:
+      MAE:  0.5179
+      MSE:  1.0595
+      RMSE:  1.0293
+      R2:  0.9747
+
+  - Correlation:
+      Spearman correlation: 0.988906
+
+  End of test:
+  | time:    3.676s | LR: 0.000328 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   38 |
+    -----------------------
+    | FN:   66 | TN:  318 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8933
+      Precision: 0.6415
+      Recall: 0.5075
+      F1-score: 0.5667
+  - Regression:
+      MAE:  5.2408
+      MSE: 44.6980
+      RMSE:  6.6857
+      R2: -0.3571
+
+  - Correlation:
+      Spearman correlation: 0.235795
+
+Epoch: 47  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 47  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.465s | LR: 0.000328 | Average Loss:  0.01885 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  691 | FP:    4 |
+    -----------------------
+    | FN:   24 | TN:  592 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9664
+      TNR/Specificity: 0.9933
+      Precision: 0.9942
+      Recall: 0.9664
+      F1-score: 0.9801
+  - Regression:
+      MAE:  0.5736
+      MSE:  1.2250
+      RMSE:  1.1068
+      R2:  0.9712
+
+  - Correlation:
+      Spearman correlation: 0.989299
+
+  End of test:
+  | time:    3.523s | LR: 0.000328 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   32 |
+    -----------------------
+    | FN:   71 | TN:  324 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9101
+      Precision: 0.6632
+      Recall: 0.4701
+      F1-score: 0.5502
+  - Regression:
+      MAE:  5.1531
+      MSE: 44.5857
+      RMSE:  6.6773
+      R2: -0.3537
+
+  - Correlation:
+      Spearman correlation: 0.245602
+
+Epoch: 48  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 48  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.970s | LR: 0.000328 | Average Loss:  0.01819 | Accuracy: 97.25% (1275/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  697 | FP:    4 |
+    -----------------------
+    | FN:   32 | TN:  578 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9561
+      TNR/Specificity: 0.9931
+      Precision: 0.9943
+      Recall: 0.9561
+      F1-score: 0.9748
+  - Regression:
+      MAE:  0.5256
+      MSE:  1.1571
+      RMSE:  1.0757
+      R2:  0.9730
+
+  - Correlation:
+      Spearman correlation: 0.989300
+
+  End of test:
+  | time:    4.688s | LR: 0.000328 | Average Loss:      nan | Accuracy: 77.96% (382/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   43 |
+    -----------------------
+    | FN:   65 | TN:  313 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8792
+      Precision: 0.6161
+      Recall: 0.5149
+      F1-score: 0.5610
+  - Regression:
+      MAE:  5.2000
+      MSE: 43.6122
+      RMSE:  6.6040
+      R2: -0.3242
+
+  - Correlation:
+      Spearman correlation: 0.236541
+
+Epoch: 49  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 49  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.142s | LR: 0.000328 | Average Loss:  0.01892 | Accuracy: 97.71% (1281/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    5 |
+    -----------------------
+    | FN:   25 | TN:  583 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9654
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9654
+      F1-score: 0.9790
+  - Regression:
+      MAE:  0.5370
+      MSE:  1.2372
+      RMSE:  1.1123
+      R2:  0.9701
+
+  - Correlation:
+      Spearman correlation: 0.988861
+
+  End of test:
+  | time:    3.881s | LR: 0.000328 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   35 |
+    -----------------------
+    | FN:   69 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9017
+      Precision: 0.6500
+      Recall: 0.4851
+      F1-score: 0.5556
+  - Regression:
+      MAE:  5.1735
+      MSE: 44.2837
+      RMSE:  6.6546
+      R2: -0.3446
+
+  - Correlation:
+      Spearman correlation: 0.245526
+
+Epoch: 50  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 50  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.625s | LR: 0.000295 | Average Loss:  0.01810 | Accuracy: 97.25% (1275/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  665 | FP:    6 |
+    -----------------------
+    | FN:   30 | TN:  610 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9568
+      TNR/Specificity: 0.9903
+      Precision: 0.9911
+      Recall: 0.9568
+      F1-score: 0.9736
+  - Regression:
+      MAE:  0.5492
+      MSE:  1.1442
+      RMSE:  1.0697
+      R2:  0.9727
+
+  - Correlation:
+      Spearman correlation: 0.989444
+
+  End of test:
+  | time:    3.755s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   36 |
+    -----------------------
+    | FN:   70 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.8989
+      Precision: 0.6400
+      Recall: 0.4776
+      F1-score: 0.5470
+  - Regression:
+      MAE:  5.2286
+      MSE: 44.9184
+      RMSE:  6.7021
+      R2: -0.3638
+
+  - Correlation:
+      Spearman correlation: 0.233181
+
+Epoch: 51  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 51  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.330s | LR: 0.000295 | Average Loss:  0.01670 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  703 | FP:    5 |
+    -----------------------
+    | FN:   23 | TN:  580 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9683
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9683
+      F1-score: 0.9805
+  - Regression:
+      MAE:  0.5011
+      MSE:  1.0336
+      RMSE:  1.0166
+      R2:  0.9747
+
+  - Correlation:
+      Spearman correlation: 0.991478
+
+  End of test:
+  | time:    3.759s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   70 | FP:   42 |
+    -----------------------
+    | FN:   64 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5224
+      TNR/Specificity: 0.8820
+      Precision: 0.6250
+      Recall: 0.5224
+      F1-score: 0.5691
+  - Regression:
+      MAE:  5.2714
+      MSE: 44.5898
+      RMSE:  6.6776
+      R2: -0.3539
+
+  - Correlation:
+      Spearman correlation: 0.234909
+
+Epoch: 52  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 52  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.549s | LR: 0.000295 | Average Loss:  0.01845 | Accuracy: 98.17% (1287/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  672 | FP:    1 |
+    -----------------------
+    | FN:   23 | TN:  615 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9669
+      TNR/Specificity: 0.9984
+      Precision: 0.9985
+      Recall: 0.9669
+      F1-score: 0.9825
+  - Regression:
+      MAE:  0.4943
+      MSE:  1.0450
+      RMSE:  1.0223
+      R2:  0.9742
+
+  - Correlation:
+      Spearman correlation: 0.990076
+
+  End of test:
+  | time:    3.890s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   34 |
+    -----------------------
+    | FN:   69 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9045
+      Precision: 0.6566
+      Recall: 0.4851
+      F1-score: 0.5579
+  - Regression:
+      MAE:  5.2082
+      MSE: 45.0163
+      RMSE:  6.7094
+      R2: -0.3668
+
+  - Correlation:
+      Spearman correlation: 0.234633
+
+Epoch: 53  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 53  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.636s | LR: 0.000295 | Average Loss:  0.01753 | Accuracy: 97.48% (1278/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    4 |
+    -----------------------
+    | FN:   29 | TN:  580 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9601
+      TNR/Specificity: 0.9932
+      Precision: 0.9943
+      Recall: 0.9601
+      F1-score: 0.9769
+  - Regression:
+      MAE:  0.5080
+      MSE:  1.0892
+      RMSE:  1.0437
+      R2:  0.9744
+
+  - Correlation:
+      Spearman correlation: 0.990765
+
+  End of test:
+  | time:    3.945s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   41 |
+    -----------------------
+    | FN:   65 | TN:  315 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8848
+      Precision: 0.6273
+      Recall: 0.5149
+      F1-score: 0.5656
+  - Regression:
+      MAE:  5.2633
+      MSE: 44.2714
+      RMSE:  6.6537
+      R2: -0.3442
+
+  - Correlation:
+      Spearman correlation: 0.238136
+
+Epoch: 54  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 54  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.633s | LR: 0.000295 | Average Loss:  0.01681 | Accuracy: 98.32% (1289/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  697 | FP:    3 |
+    -----------------------
+    | FN:   19 | TN:  592 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9735
+      TNR/Specificity: 0.9950
+      Precision: 0.9957
+      Recall: 0.9735
+      F1-score: 0.9845
+  - Regression:
+      MAE:  0.4775
+      MSE:  0.9474
+      RMSE:  0.9733
+      R2:  0.9773
+
+  - Correlation:
+      Spearman correlation: 0.990680
+
+  End of test:
+  | time:    3.557s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   33 |
+    -----------------------
+    | FN:   70 | TN:  323 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9073
+      Precision: 0.6598
+      Recall: 0.4776
+      F1-score: 0.5541
+  - Regression:
+      MAE:  5.1735
+      MSE: 44.2143
+      RMSE:  6.6494
+      R2: -0.3425
+
+  - Correlation:
+      Spearman correlation: 0.235945
+
+Epoch: 55  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 55  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.812s | LR: 0.000295 | Average Loss:  0.01714 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  666 | FP:    4 |
+    -----------------------
+    | FN:   24 | TN:  617 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9652
+      TNR/Specificity: 0.9936
+      Precision: 0.9940
+      Recall: 0.9652
+      F1-score: 0.9794
+  - Regression:
+      MAE:  0.4897
+      MSE:  1.0008
+      RMSE:  1.0004
+      R2:  0.9760
+
+  - Correlation:
+      Spearman correlation: 0.990271
+
+  End of test:
+  | time:    3.813s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   35 |
+    -----------------------
+    | FN:   69 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9017
+      Precision: 0.6500
+      Recall: 0.4851
+      F1-score: 0.5556
+  - Regression:
+      MAE:  5.1878
+      MSE: 44.1796
+      RMSE:  6.6468
+      R2: -0.3414
+
+  - Correlation:
+      Spearman correlation: 0.230058
+
+Epoch: 56  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 56  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.559s | LR: 0.000295 | Average Loss:  0.01628 | Accuracy: 98.17% (1287/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  731 | FP:    3 |
+    -----------------------
+    | FN:   21 | TN:  556 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9721
+      TNR/Specificity: 0.9946
+      Precision: 0.9959
+      Recall: 0.9721
+      F1-score: 0.9838
+  - Regression:
+      MAE:  0.4661
+      MSE:  0.9649
+      RMSE:  0.9823
+      R2:  0.9773
+
+  - Correlation:
+      Spearman correlation: 0.992031
+
+  End of test:
+  | time:    3.648s | LR: 0.000295 | Average Loss:      nan | Accuracy: 77.55% (380/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   43 |
+    -----------------------
+    | FN:   67 | TN:  313 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8792
+      Precision: 0.6091
+      Recall: 0.5000
+      F1-score: 0.5492
+  - Regression:
+      MAE:  5.2408
+      MSE: 44.7633
+      RMSE:  6.6905
+      R2: -0.3591
+
+  - Correlation:
+      Spearman correlation: 0.229454
+
+Epoch: 57  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 57  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.056s | LR: 0.000295 | Average Loss:  0.01714 | Accuracy: 98.40% (1290/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  697 | FP:    4 |
+    -----------------------
+    | FN:   17 | TN:  593 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9762
+      TNR/Specificity: 0.9933
+      Precision: 0.9943
+      Recall: 0.9762
+      F1-score: 0.9852
+  - Regression:
+      MAE:  0.4790
+      MSE:  0.9031
+      RMSE:  0.9503
+      R2:  0.9788
+
+  - Correlation:
+      Spearman correlation: 0.991229
+
+  End of test:
+  | time:    3.624s | LR: 0.000295 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   37 |
+    -----------------------
+    | FN:   65 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8961
+      Precision: 0.6509
+      Recall: 0.5149
+      F1-score: 0.5750
+  - Regression:
+      MAE:  5.1510
+      MSE: 43.5347
+      RMSE:  6.5981
+      R2: -0.3218
+
+  - Correlation:
+      Spearman correlation: 0.234626
+
+Epoch: 58  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 58  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.492s | LR: 0.000295 | Average Loss:  0.01692 | Accuracy: 98.02% (1285/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  665 | FP:    3 |
+    -----------------------
+    | FN:   23 | TN:  620 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9666
+      TNR/Specificity: 0.9952
+      Precision: 0.9955
+      Recall: 0.9666
+      F1-score: 0.9808
+  - Regression:
+      MAE:  0.4981
+      MSE:  1.0229
+      RMSE:  1.0114
+      R2:  0.9769
+
+  - Correlation:
+      Spearman correlation: 0.990425
+
+  End of test:
+  | time:    3.500s | LR: 0.000295 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   34 |
+    -----------------------
+    | FN:   70 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9045
+      Precision: 0.6531
+      Recall: 0.4776
+      F1-score: 0.5517
+  - Regression:
+      MAE:  5.1306
+      MSE: 44.3020
+      RMSE:  6.6560
+      R2: -0.3451
+
+  - Correlation:
+      Spearman correlation: 0.243824
+
+Epoch: 59  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 59  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.925s | LR: 0.000295 | Average Loss:  0.01739 | Accuracy: 97.41% (1277/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  689 | FP:    5 |
+    -----------------------
+    | FN:   29 | TN:  588 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9596
+      TNR/Specificity: 0.9916
+      Precision: 0.9928
+      Recall: 0.9596
+      F1-score: 0.9759
+  - Regression:
+      MAE:  0.5713
+      MSE:  1.2990
+      RMSE:  1.1397
+      R2:  0.9697
+
+  - Correlation:
+      Spearman correlation: 0.989472
+
+  End of test:
+  | time:    3.922s | LR: 0.000295 | Average Loss:      nan | Accuracy: 79.39% (389/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   34 |
+    -----------------------
+    | FN:   67 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9045
+      Precision: 0.6634
+      Recall: 0.5000
+      F1-score: 0.5702
+  - Regression:
+      MAE:  5.1082
+      MSE: 43.4143
+      RMSE:  6.5890
+      R2: -0.3182
+
+  - Correlation:
+      Spearman correlation: 0.240777
+
+Epoch: 60  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 60  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.268s | LR: 0.000266 | Average Loss:  0.01534 | Accuracy: 98.32% (1289/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  700 | FP:    2 |
+    -----------------------
+    | FN:   20 | TN:  589 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9722
+      TNR/Specificity: 0.9966
+      Precision: 0.9972
+      Recall: 0.9722
+      F1-score: 0.9845
+  - Regression:
+      MAE:  0.4706
+      MSE:  0.9176
+      RMSE:  0.9579
+      R2:  0.9780
+
+  - Correlation:
+      Spearman correlation: 0.991900
+
+  End of test:
+  | time:    3.587s | LR: 0.000266 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   40 |
+    -----------------------
+    | FN:   65 | TN:  316 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8876
+      Precision: 0.6330
+      Recall: 0.5149
+      F1-score: 0.5679
+  - Regression:
+      MAE:  5.0857
+      MSE: 42.7837
+      RMSE:  6.5409
+      R2: -0.2990
+
+  - Correlation:
+      Spearman correlation: 0.239948
+
+Epoch: 61  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 61  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.803s | LR: 0.000266 | Average Loss:  0.01634 | Accuracy: 97.64% (1280/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  691 | FP:   10 |
+    -----------------------
+    | FN:   21 | TN:  589 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9705
+      TNR/Specificity: 0.9833
+      Precision: 0.9857
+      Recall: 0.9705
+      F1-score: 0.9781
+  - Regression:
+      MAE:  0.4531
+      MSE:  0.9001
+      RMSE:  0.9487
+      R2:  0.9775
+
+  - Correlation:
+      Spearman correlation: 0.991587
+
+  End of test:
+  | time:    3.868s | LR: 0.000266 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   34 |
+    -----------------------
+    | FN:   68 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.9045
+      Precision: 0.6600
+      Recall: 0.4925
+      F1-score: 0.5641
+  - Regression:
+      MAE:  5.0980
+      MSE: 42.7592
+      RMSE:  6.5391
+      R2: -0.2983
+
+  - Correlation:
+      Spearman correlation: 0.232509
+
+Epoch: 62  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 62  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.368s | LR: 0.000266 | Average Loss:  0.01547 | Accuracy: 98.32% (1289/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  704 | FP:    5 |
+    -----------------------
+    | FN:   17 | TN:  585 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9764
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9764
+      F1-score: 0.9846
+  - Regression:
+      MAE:  0.4439
+      MSE:  0.8863
+      RMSE:  0.9415
+      R2:  0.9799
+
+  - Correlation:
+      Spearman correlation: 0.992212
+
+  End of test:
+  | time:    3.735s | LR: 0.000266 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   36 |
+    -----------------------
+    | FN:   67 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8989
+      Precision: 0.6505
+      Recall: 0.5000
+      F1-score: 0.5654
+  - Regression:
+      MAE:  5.1388
+      MSE: 44.2898
+      RMSE:  6.6551
+      R2: -0.3447
+
+  - Correlation:
+      Spearman correlation: 0.252426
+
+Epoch: 63  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 63  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.118s | LR: 0.000266 | Average Loss:  0.01621 | Accuracy: 98.25% (1288/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  714 | FP:    2 |
+    -----------------------
+    | FN:   21 | TN:  574 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9714
+      TNR/Specificity: 0.9965
+      Precision: 0.9972
+      Recall: 0.9714
+      F1-score: 0.9841
+  - Regression:
+      MAE:  0.5217
+      MSE:  1.1304
+      RMSE:  1.0632
+      R2:  0.9729
+
+  - Correlation:
+      Spearman correlation: 0.991245
+
+  End of test:
+  | time:    3.915s | LR: 0.000266 | Average Loss:      nan | Accuracy: 79.39% (389/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   35 |
+    -----------------------
+    | FN:   66 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.9017
+      Precision: 0.6602
+      Recall: 0.5075
+      F1-score: 0.5738
+  - Regression:
+      MAE:  5.1082
+      MSE: 41.8265
+      RMSE:  6.4673
+      R2: -0.2700
+
+  - Correlation:
+      Spearman correlation: 0.244468
+
+Epoch: 64  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 64  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.178s | LR: 0.000266 | Average Loss:  0.01570 | Accuracy: 97.79% (1282/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  723 | FP:    5 |
+    -----------------------
+    | FN:   24 | TN:  559 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9679
+      TNR/Specificity: 0.9911
+      Precision: 0.9931
+      Recall: 0.9679
+      F1-score: 0.9803
+  - Regression:
+      MAE:  0.4142
+      MSE:  0.8139
+      RMSE:  0.9022
+      R2:  0.9809
+
+  - Correlation:
+      Spearman correlation: 0.993228
+
+  End of test:
+  | time:    3.666s | LR: 0.000266 | Average Loss:      nan | Accuracy: 80.00% (392/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   31 |
+    -----------------------
+    | FN:   67 | TN:  325 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9129
+      Precision: 0.6837
+      Recall: 0.5000
+      F1-score: 0.5776
+  - Regression:
+      MAE:  5.0347
+      MSE: 42.2959
+      RMSE:  6.5035
+      R2: -0.2842
+
+  - Correlation:
+      Spearman correlation: 0.256184
+
+Epoch: 65  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 65  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.172s | LR: 0.000266 | Average Loss:  0.01624 | Accuracy: 98.55% (1292/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  676 | FP:    3 |
+    -----------------------
+    | FN:   16 | TN:  616 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9769
+      TNR/Specificity: 0.9952
+      Precision: 0.9956
+      Recall: 0.9769
+      F1-score: 0.9861
+  - Regression:
+      MAE:  0.5133
+      MSE:  1.0092
+      RMSE:  1.0046
+      R2:  0.9768
+
+  - Correlation:
+      Spearman correlation: 0.990325
+
+  End of test:
+  | time:    3.678s | LR: 0.000266 | Average Loss:      nan | Accuracy: 79.59% (390/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   33 |
+    -----------------------
+    | FN:   67 | TN:  323 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9073
+      Precision: 0.6700
+      Recall: 0.5000
+      F1-score: 0.5726
+  - Regression:
+      MAE:  5.1000
+      MSE: 43.4510
+      RMSE:  6.5917
+      R2: -0.3193
+
+  - Correlation:
+      Spearman correlation: 0.260555
+
+Epoch: 66  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 66  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.185s | LR: 0.000266 | Average Loss:  0.01546 | Accuracy: 98.32% (1289/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  703 | FP:    5 |
+    -----------------------
+    | FN:   17 | TN:  586 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9764
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9764
+      F1-score: 0.9846
+  - Regression:
+      MAE:  0.4706
+      MSE:  1.0244
+      RMSE:  1.0121
+      R2:  0.9762
+
+  - Correlation:
+      Spearman correlation: 0.990416
+
+  End of test:
+  | time:    3.852s | LR: 0.000266 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   35 |
+    -----------------------
+    | FN:   69 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9017
+      Precision: 0.6500
+      Recall: 0.4851
+      F1-score: 0.5556
+  - Regression:
+      MAE:  5.1204
+      MSE: 42.9327
+      RMSE:  6.5523
+      R2: -0.3035
+
+  - Correlation:
+      Spearman correlation: 0.235558
+
+Epoch: 67  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 67  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.592s | LR: 0.000266 | Average Loss:  0.01526 | Accuracy: 98.32% (1289/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  672 | FP:    5 |
+    -----------------------
+    | FN:   17 | TN:  617 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9753
+      TNR/Specificity: 0.9920
+      Precision: 0.9926
+      Recall: 0.9753
+      F1-score: 0.9839
+  - Regression:
+      MAE:  0.4203
+      MSE:  0.8490
+      RMSE:  0.9214
+      R2:  0.9800
+
+  - Correlation:
+      Spearman correlation: 0.991247
+
+  End of test:
+  | time:    3.802s | LR: 0.000266 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   35 |
+    -----------------------
+    | FN:   69 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9017
+      Precision: 0.6500
+      Recall: 0.4851
+      F1-score: 0.5556
+  - Regression:
+      MAE:  5.1367
+      MSE: 43.6102
+      RMSE:  6.6038
+      R2: -0.3241
+
+  - Correlation:
+      Spearman correlation: 0.233284
+
+Epoch: 68  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 68  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.629s | LR: 0.000266 | Average Loss:  0.01580 | Accuracy: 98.09% (1286/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  700 | FP:    5 |
+    -----------------------
+    | FN:   20 | TN:  586 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9722
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9722
+      F1-score: 0.9825
+  - Regression:
+      MAE:  0.4706
+      MSE:  0.9176
+      RMSE:  0.9579
+      R2:  0.9785
+
+  - Correlation:
+      Spearman correlation: 0.992020
+
+  End of test:
+  | time:    3.826s | LR: 0.000266 | Average Loss:      nan | Accuracy: 77.96% (382/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   41 |
+    -----------------------
+    | FN:   67 | TN:  315 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8848
+      Precision: 0.6204
+      Recall: 0.5000
+      F1-score: 0.5537
+  - Regression:
+      MAE:  5.1694
+      MSE: 44.0102
+      RMSE:  6.6340
+      R2: -0.3363
+
+  - Correlation:
+      Spearman correlation: 0.235749
+
+Epoch: 69  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 69  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   24.871s | LR: 0.000266 | Average Loss:  0.01614 | Accuracy: 98.17% (1287/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  688 | FP:    8 |
+    -----------------------
+    | FN:   16 | TN:  599 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9773
+      TNR/Specificity: 0.9868
+      Precision: 0.9885
+      Recall: 0.9773
+      F1-score: 0.9829
+  - Regression:
+      MAE:  0.5019
+      MSE:  1.1182
+      RMSE:  1.0575
+      R2:  0.9730
+
+  - Correlation:
+      Spearman correlation: 0.989678
+
+  End of test:
+  | time:    3.958s | LR: 0.000266 | Average Loss:      nan | Accuracy: 79.80% (391/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   66 | FP:   31 |
+    -----------------------
+    | FN:   68 | TN:  325 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4925
+      TNR/Specificity: 0.9129
+      Precision: 0.6804
+      Recall: 0.4925
+      F1-score: 0.5714
+  - Regression:
+      MAE:  5.1020
+      MSE: 43.6163
+      RMSE:  6.6043
+      R2: -0.3243
+
+  - Correlation:
+      Spearman correlation: 0.236949
+
+Epoch: 70  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 70  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.352s | LR: 0.000239 | Average Loss:  0.01584 | Accuracy: 97.64% (1280/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  707 | FP:    4 |
+    -----------------------
+    | FN:   27 | TN:  573 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9632
+      TNR/Specificity: 0.9931
+      Precision: 0.9944
+      Recall: 0.9632
+      F1-score: 0.9785
+  - Regression:
+      MAE:  0.4500
+      MSE:  0.9031
+      RMSE:  0.9503
+      R2:  0.9778
+
+  - Correlation:
+      Spearman correlation: 0.991629
+
+  End of test:
+  | time:    3.787s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   36 |
+    -----------------------
+    | FN:   70 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.8989
+      Precision: 0.6400
+      Recall: 0.4776
+      F1-score: 0.5470
+  - Regression:
+      MAE:  5.1633
+      MSE: 43.9102
+      RMSE:  6.6265
+      R2: -0.3332
+
+  - Correlation:
+      Spearman correlation: 0.223924
+
+Epoch: 71  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 71  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.878s | LR: 0.000239 | Average Loss:  0.01568 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  718 | FP:    6 |
+    -----------------------
+    | FN:   22 | TN:  565 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9703
+      TNR/Specificity: 0.9895
+      Precision: 0.9917
+      Recall: 0.9703
+      F1-score: 0.9809
+  - Regression:
+      MAE:  0.4699
+      MSE:  1.0069
+      RMSE:  1.0034
+      R2:  0.9762
+
+  - Correlation:
+      Spearman correlation: 0.991020
+
+  End of test:
+  | time:    3.898s | LR: 0.000239 | Average Loss:      nan | Accuracy: 77.35% (379/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   44 |
+    -----------------------
+    | FN:   67 | TN:  312 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.8764
+      Precision: 0.6036
+      Recall: 0.5000
+      F1-score: 0.5469
+  - Regression:
+      MAE:  5.1367
+      MSE: 43.6633
+      RMSE:  6.6078
+      R2: -0.3257
+
+  - Correlation:
+      Spearman correlation: 0.248868
+
+Epoch: 72  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 72  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.455s | LR: 0.000239 | Average Loss:  0.01537 | Accuracy: 98.17% (1287/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    3 |
+    -----------------------
+    | FN:   21 | TN:  589 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9708
+      TNR/Specificity: 0.9949
+      Precision: 0.9957
+      Recall: 0.9708
+      F1-score: 0.9831
+  - Regression:
+      MAE:  0.4859
+      MSE:  1.0503
+      RMSE:  1.0249
+      R2:  0.9755
+
+  - Correlation:
+      Spearman correlation: 0.989572
+
+  End of test:
+  | time:    3.766s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   35 |
+    -----------------------
+    | FN:   70 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9017
+      Precision: 0.6465
+      Recall: 0.4776
+      F1-score: 0.5494
+  - Regression:
+      MAE:  5.1041
+      MSE: 43.7204
+      RMSE:  6.6121
+      R2: -0.3275
+
+  - Correlation:
+      Spearman correlation: 0.243130
+
+Epoch: 73  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 73  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.783s | LR: 0.000239 | Average Loss:  0.01639 | Accuracy: 97.48% (1278/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  676 | FP:    1 |
+    -----------------------
+    | FN:   32 | TN:  602 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9548
+      TNR/Specificity: 0.9983
+      Precision: 0.9985
+      Recall: 0.9548
+      F1-score: 0.9762
+  - Regression:
+      MAE:  0.5149
+      MSE:  1.1205
+      RMSE:  1.0585
+      R2:  0.9741
+
+  - Correlation:
+      Spearman correlation: 0.989976
+
+  End of test:
+  | time:    3.642s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   36 |
+    -----------------------
+    | FN:   69 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8989
+      Precision: 0.6436
+      Recall: 0.4851
+      F1-score: 0.5532
+  - Regression:
+      MAE:  5.1041
+      MSE: 42.9694
+      RMSE:  6.5551
+      R2: -0.3047
+
+  - Correlation:
+      Spearman correlation: 0.233044
+
+Epoch: 74  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 74  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.329s | LR: 0.000239 | Average Loss:  0.01533 | Accuracy: 97.94% (1284/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  697 | FP:    1 |
+    -----------------------
+    | FN:   26 | TN:  587 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9640
+      TNR/Specificity: 0.9983
+      Precision: 0.9986
+      Recall: 0.9640
+      F1-score: 0.9810
+  - Regression:
+      MAE:  0.4272
+      MSE:  0.9580
+      RMSE:  0.9788
+      R2:  0.9777
+
+  - Correlation:
+      Spearman correlation: 0.991046
+
+  End of test:
+  | time:    4.023s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   70 | FP:   42 |
+    -----------------------
+    | FN:   64 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5224
+      TNR/Specificity: 0.8820
+      Precision: 0.6250
+      Recall: 0.5224
+      F1-score: 0.5691
+  - Regression:
+      MAE:  5.1204
+      MSE: 43.6714
+      RMSE:  6.6084
+      R2: -0.3260
+
+  - Correlation:
+      Spearman correlation: 0.233186
+
+Epoch: 75  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 75  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.957s | LR: 0.000239 | Average Loss:  0.01574 | Accuracy: 98.32% (1289/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  675 | FP:    6 |
+    -----------------------
+    | FN:   16 | TN:  614 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9768
+      TNR/Specificity: 0.9903
+      Precision: 0.9912
+      Recall: 0.9768
+      F1-score: 0.9840
+  - Regression:
+      MAE:  0.4905
+      MSE:  1.0839
+      RMSE:  1.0411
+      R2:  0.9745
+
+  - Correlation:
+      Spearman correlation: 0.989538
+
+  End of test:
+  | time:    3.750s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   35 |
+    -----------------------
+    | FN:   69 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9017
+      Precision: 0.6500
+      Recall: 0.4851
+      F1-score: 0.5556
+  - Regression:
+      MAE:  5.0898
+      MSE: 43.2122
+      RMSE:  6.5736
+      R2: -0.3120
+
+  - Correlation:
+      Spearman correlation: 0.236889
+
+Epoch: 76  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 76  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.302s | LR: 0.000239 | Average Loss:  0.01647 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  677 | FP:    2 |
+    -----------------------
+    | FN:   26 | TN:  606 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9630
+      TNR/Specificity: 0.9967
+      Precision: 0.9971
+      Recall: 0.9630
+      F1-score: 0.9797
+  - Regression:
+      MAE:  0.5072
+      MSE:  1.1602
+      RMSE:  1.0771
+      R2:  0.9727
+
+  - Correlation:
+      Spearman correlation: 0.989292
+
+  End of test:
+  | time:    4.074s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.57% (385/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   36 |
+    -----------------------
+    | FN:   69 | TN:  320 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8989
+      Precision: 0.6436
+      Recall: 0.4851
+      F1-score: 0.5532
+  - Regression:
+      MAE:  5.1000
+      MSE: 42.5653
+      RMSE:  6.5242
+      R2: -0.2924
+
+  - Correlation:
+      Spearman correlation: 0.230945
+
+Epoch: 77  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 77  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.575s | LR: 0.000239 | Average Loss:  0.01540 | Accuracy: 97.71% (1281/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    4 |
+    -----------------------
+    | FN:   26 | TN:  583 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9641
+      TNR/Specificity: 0.9932
+      Precision: 0.9943
+      Recall: 0.9641
+      F1-score: 0.9790
+  - Regression:
+      MAE:  0.4714
+      MSE:  0.9733
+      RMSE:  0.9866
+      R2:  0.9771
+
+  - Correlation:
+      Spearman correlation: 0.991488
+
+  End of test:
+  | time:    3.896s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   72 | FP:   42 |
+    -----------------------
+    | FN:   62 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5373
+      TNR/Specificity: 0.8820
+      Precision: 0.6316
+      Recall: 0.5373
+      F1-score: 0.5806
+  - Regression:
+      MAE:  5.1735
+      MSE: 44.3286
+      RMSE:  6.6580
+      R2: -0.3459
+
+  - Correlation:
+      Spearman correlation: 0.233724
+
+Epoch: 78  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 78  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.341s | LR: 0.000239 | Average Loss:  0.01641 | Accuracy: 98.02% (1285/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  686 | FP:   11 |
+    -----------------------
+    | FN:   15 | TN:  599 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9786
+      TNR/Specificity: 0.9820
+      Precision: 0.9842
+      Recall: 0.9786
+      F1-score: 0.9814
+  - Regression:
+      MAE:  0.4630
+      MSE:  0.9085
+      RMSE:  0.9531
+      R2:  0.9784
+
+  - Correlation:
+      Spearman correlation: 0.990644
+
+  End of test:
+  | time:    3.549s | LR: 0.000239 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   37 |
+    -----------------------
+    | FN:   66 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.8961
+      Precision: 0.6476
+      Recall: 0.5075
+      F1-score: 0.5690
+  - Regression:
+      MAE:  5.0939
+      MSE: 43.2041
+      RMSE:  6.5730
+      R2: -0.3118
+
+  - Correlation:
+      Spearman correlation: 0.238517
+
+Epoch: 79  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 79  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.978s | LR: 0.000239 | Average Loss:  0.01605 | Accuracy: 98.40% (1290/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  648 | FP:    1 |
+    -----------------------
+    | FN:   20 | TN:  642 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9701
+      TNR/Specificity: 0.9984
+      Precision: 0.9985
+      Recall: 0.9701
+      F1-score: 0.9841
+  - Regression:
+      MAE:  0.4897
+      MSE:  1.0191
+      RMSE:  1.0095
+      R2:  0.9766
+
+  - Correlation:
+      Spearman correlation: 0.989607
+
+  End of test:
+  | time:    3.700s | LR: 0.000239 | Average Loss:      nan | Accuracy: 79.39% (389/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   32 |
+    -----------------------
+    | FN:   69 | TN:  324 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9101
+      Precision: 0.6701
+      Recall: 0.4851
+      F1-score: 0.5628
+  - Regression:
+      MAE:  5.0735
+      MSE: 42.9633
+      RMSE:  6.5546
+      R2: -0.3045
+
+  - Correlation:
+      Spearman correlation: 0.224811
+
+Epoch: 80  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 80  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   24.992s | LR: 0.000215 | Average Loss:  0.01520 | Accuracy: 97.94% (1284/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  704 | FP:    9 |
+    -----------------------
+    | FN:   18 | TN:  580 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9751
+      TNR/Specificity: 0.9847
+      Precision: 0.9874
+      Recall: 0.9751
+      F1-score: 0.9812
+  - Regression:
+      MAE:  0.4958
+      MSE:  1.1137
+      RMSE:  1.0553
+      R2:  0.9732
+
+  - Correlation:
+      Spearman correlation: 0.990680
+
+  End of test:
+  | time:    3.418s | LR: 0.000215 | Average Loss:      nan | Accuracy: 77.55% (380/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   45 |
+    -----------------------
+    | FN:   65 | TN:  311 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8736
+      Precision: 0.6053
+      Recall: 0.5149
+      F1-score: 0.5565
+  - Regression:
+      MAE:  5.1714
+      MSE: 43.4327
+      RMSE:  6.5903
+      R2: -0.3187
+
+  - Correlation:
+      Spearman correlation: 0.236652
+
+Epoch: 81  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 81  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.259s | LR: 0.000215 | Average Loss:  0.01472 | Accuracy: 98.93% (1297/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  692 | FP:    3 |
+    -----------------------
+    | FN:   11 | TN:  605 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9844
+      TNR/Specificity: 0.9951
+      Precision: 0.9957
+      Recall: 0.9844
+      F1-score: 0.9900
+  - Regression:
+      MAE:  0.4249
+      MSE:  0.8810
+      RMSE:  0.9386
+      R2:  0.9793
+
+  - Correlation:
+      Spearman correlation: 0.991396
+
+  End of test:
+  | time:    3.790s | LR: 0.000215 | Average Loss:      nan | Accuracy: 77.55% (380/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   45 |
+    -----------------------
+    | FN:   65 | TN:  311 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8736
+      Precision: 0.6053
+      Recall: 0.5149
+      F1-score: 0.5565
+  - Regression:
+      MAE:  5.1857
+      MSE: 44.4143
+      RMSE:  6.6644
+      R2: -0.3485
+
+  - Correlation:
+      Spearman correlation: 0.214879
+
+Epoch: 82  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 82  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.015s | LR: 0.000215 | Average Loss:  0.01395 | Accuracy: 98.55% (1292/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  691 | FP:    4 |
+    -----------------------
+    | FN:   15 | TN:  601 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9788
+      TNR/Specificity: 0.9934
+      Precision: 0.9942
+      Recall: 0.9788
+      F1-score: 0.9864
+  - Regression:
+      MAE:  0.4020
+      MSE:  0.7895
+      RMSE:  0.8885
+      R2:  0.9819
+
+  - Correlation:
+      Spearman correlation: 0.992429
+
+  End of test:
+  | time:    3.559s | LR: 0.000215 | Average Loss:      nan | Accuracy: 79.59% (390/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   68 | FP:   34 |
+    -----------------------
+    | FN:   66 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5075
+      TNR/Specificity: 0.9045
+      Precision: 0.6667
+      Recall: 0.5075
+      F1-score: 0.5763
+  - Regression:
+      MAE:  5.1020
+      MSE: 43.2041
+      RMSE:  6.5730
+      R2: -0.3118
+
+  - Correlation:
+      Spearman correlation: 0.235115
+
+Epoch: 83  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 83  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.057s | LR: 0.000215 | Average Loss:  0.01438 | Accuracy: 98.78% (1295/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  675 | FP:    1 |
+    -----------------------
+    | FN:   15 | TN:  620 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9783
+      TNR/Specificity: 0.9984
+      Precision: 0.9985
+      Recall: 0.9783
+      F1-score: 0.9883
+  - Regression:
+      MAE:  0.4386
+      MSE:  0.9161
+      RMSE:  0.9571
+      R2:  0.9787
+
+  - Correlation:
+      Spearman correlation: 0.990415
+
+  End of test:
+  | time:    3.742s | LR: 0.000215 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   37 |
+    -----------------------
+    | FN:   65 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8961
+      Precision: 0.6509
+      Recall: 0.5149
+      F1-score: 0.5750
+  - Regression:
+      MAE:  5.1327
+      MSE: 43.5000
+      RMSE:  6.5955
+      R2: -0.3208
+
+  - Correlation:
+      Spearman correlation: 0.229505
+
+Epoch: 84  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 84  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.284s | LR: 0.000215 | Average Loss:  0.01492 | Accuracy: 98.70% (1294/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  707 | FP:    1 |
+    -----------------------
+    | FN:   16 | TN:  587 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9779
+      TNR/Specificity: 0.9983
+      Precision: 0.9986
+      Recall: 0.9779
+      F1-score: 0.9881
+  - Regression:
+      MAE:  0.4889
+      MSE:  1.0992
+      RMSE:  1.0484
+      R2:  0.9732
+
+  - Correlation:
+      Spearman correlation: 0.991335
+
+  End of test:
+  | time:    3.696s | LR: 0.000215 | Average Loss:      nan | Accuracy: 79.80% (391/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   34 |
+    -----------------------
+    | FN:   65 | TN:  322 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.9045
+      Precision: 0.6699
+      Recall: 0.5149
+      F1-score: 0.5823
+  - Regression:
+      MAE:  5.1551
+      MSE: 43.7102
+      RMSE:  6.6114
+      R2: -0.3271
+
+  - Correlation:
+      Spearman correlation: 0.220289
+
+Epoch: 85  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 85  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.306s | LR: 0.000215 | Average Loss:  0.01374 | Accuracy: 98.63% (1293/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  700 | FP:    4 |
+    -----------------------
+    | FN:   14 | TN:  593 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9804
+      TNR/Specificity: 0.9933
+      Precision: 0.9943
+      Recall: 0.9804
+      F1-score: 0.9873
+  - Regression:
+      MAE:  0.3387
+      MSE:  0.6651
+      RMSE:  0.8156
+      R2:  0.9842
+
+  - Correlation:
+      Spearman correlation: 0.993019
+
+  End of test:
+  | time:    4.067s | LR: 0.000215 | Average Loss:      nan | Accuracy: 77.76% (381/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   70 | FP:   45 |
+    -----------------------
+    | FN:   64 | TN:  311 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5224
+      TNR/Specificity: 0.8736
+      Precision: 0.6087
+      Recall: 0.5224
+      F1-score: 0.5622
+  - Regression:
+      MAE:  5.2122
+      MSE: 44.2857
+      RMSE:  6.6548
+      R2: -0.3446
+
+  - Correlation:
+      Spearman correlation: 0.217483
+
+Epoch: 86  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 86  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.065s | LR: 0.000215 | Average Loss:  0.01454 | Accuracy: 98.40% (1290/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  695 | FP:    4 |
+    -----------------------
+    | FN:   17 | TN:  595 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9761
+      TNR/Specificity: 0.9933
+      Precision: 0.9943
+      Recall: 0.9761
+      F1-score: 0.9851
+  - Regression:
+      MAE:  0.4241
+      MSE:  0.8543
+      RMSE:  0.9243
+      R2:  0.9798
+
+  - Correlation:
+      Spearman correlation: 0.992327
+
+  End of test:
+  | time:    3.828s | LR: 0.000215 | Average Loss:      nan | Accuracy: 79.80% (391/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   32 |
+    -----------------------
+    | FN:   67 | TN:  324 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9101
+      Precision: 0.6768
+      Recall: 0.5000
+      F1-score: 0.5751
+  - Regression:
+      MAE:  5.1367
+      MSE: 44.1612
+      RMSE:  6.6454
+      R2: -0.3408
+
+  - Correlation:
+      Spearman correlation: 0.235325
+
+Epoch: 87  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 87  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.194s | LR: 0.000215 | Average Loss:  0.01465 | Accuracy: 98.17% (1287/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  680 | FP:    3 |
+    -----------------------
+    | FN:   21 | TN:  607 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9700
+      TNR/Specificity: 0.9951
+      Precision: 0.9956
+      Recall: 0.9700
+      F1-score: 0.9827
+  - Regression:
+      MAE:  0.4546
+      MSE:  0.9489
+      RMSE:  0.9741
+      R2:  0.9772
+
+  - Correlation:
+      Spearman correlation: 0.991370
+
+  End of test:
+  | time:    3.464s | LR: 0.000215 | Average Loss:      nan | Accuracy: 79.59% (390/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   67 | FP:   33 |
+    -----------------------
+    | FN:   67 | TN:  323 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9073
+      Precision: 0.6700
+      Recall: 0.5000
+      F1-score: 0.5726
+  - Regression:
+      MAE:  5.1020
+      MSE: 42.2041
+      RMSE:  6.4965
+      R2: -0.2814
+
+  - Correlation:
+      Spearman correlation: 0.224860
+
+Epoch: 88  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 88  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.585s | LR: 0.000215 | Average Loss:  0.01470 | Accuracy: 98.02% (1285/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  713 | FP:    6 |
+    -----------------------
+    | FN:   20 | TN:  572 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9727
+      TNR/Specificity: 0.9896
+      Precision: 0.9917
+      Recall: 0.9727
+      F1-score: 0.9821
+  - Regression:
+      MAE:  0.4249
+      MSE:  0.8734
+      RMSE:  0.9345
+      R2:  0.9793
+
+  - Correlation:
+      Spearman correlation: 0.991314
+
+  End of test:
+  | time:    3.696s | LR: 0.000215 | Average Loss:      nan | Accuracy: 78.98% (387/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   38 |
+    -----------------------
+    | FN:   65 | TN:  318 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8933
+      Precision: 0.6449
+      Recall: 0.5149
+      F1-score: 0.5726
+  - Regression:
+      MAE:  5.1061
+      MSE: 43.7184
+      RMSE:  6.6120
+      R2: -0.3274
+
+  - Correlation:
+      Spearman correlation: 0.238283
+
+Epoch: 89  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 89  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.874s | LR: 0.000215 | Average Loss:  0.01423 | Accuracy: 98.02% (1285/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  719 | FP:    2 |
+    -----------------------
+    | FN:   24 | TN:  566 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9677
+      TNR/Specificity: 0.9965
+      Precision: 0.9972
+      Recall: 0.9677
+      F1-score: 0.9822
+  - Regression:
+      MAE:  0.4287
+      MSE:  0.9138
+      RMSE:  0.9559
+      R2:  0.9792
+
+  - Correlation:
+      Spearman correlation: 0.991649
+
+  End of test:
+  | time:    3.925s | LR: 0.000215 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   39 |
+    -----------------------
+    | FN:   65 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8904
+      Precision: 0.6389
+      Recall: 0.5149
+      F1-score: 0.5702
+  - Regression:
+      MAE:  5.2020
+      MSE: 44.9898
+      RMSE:  6.7074
+      R2: -0.3660
+
+  - Correlation:
+      Spearman correlation: 0.237203
+
+Epoch: 90  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 90  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.530s | LR: 0.000194 | Average Loss:  0.01500 | Accuracy: 97.86% (1283/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  697 | FP:    5 |
+    -----------------------
+    | FN:   23 | TN:  586 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9681
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9681
+      F1-score: 0.9803
+  - Regression:
+      MAE:  0.4676
+      MSE:  1.0046
+      RMSE:  1.0023
+      R2:  0.9759
+
+  - Correlation:
+      Spearman correlation: 0.990618
+
+  End of test:
+  | time:    3.526s | LR: 0.000194 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   64 | FP:   32 |
+    -----------------------
+    | FN:   70 | TN:  324 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4776
+      TNR/Specificity: 0.9101
+      Precision: 0.6667
+      Recall: 0.4776
+      F1-score: 0.5565
+  - Regression:
+      MAE:  5.0531
+      MSE: 42.9143
+      RMSE:  6.5509
+      R2: -0.3030
+
+  - Correlation:
+      Spearman correlation: 0.233893
+
+Epoch: 91  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 91  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.857s | LR: 0.000194 | Average Loss:  0.01510 | Accuracy: 98.63% (1293/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  672 | FP:    5 |
+    -----------------------
+    | FN:   13 | TN:  621 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9810
+      TNR/Specificity: 0.9920
+      Precision: 0.9926
+      Recall: 0.9810
+      F1-score: 0.9868
+  - Regression:
+      MAE:  0.4020
+      MSE:  0.8108
+      RMSE:  0.9005
+      R2:  0.9807
+
+  - Correlation:
+      Spearman correlation: 0.991091
+
+  End of test:
+  | time:    3.873s | LR: 0.000194 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   37 |
+    -----------------------
+    | FN:   69 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8961
+      Precision: 0.6373
+      Recall: 0.4851
+      F1-score: 0.5508
+  - Regression:
+      MAE:  5.1347
+      MSE: 43.8571
+      RMSE:  6.6225
+      R2: -0.3316
+
+  - Correlation:
+      Spearman correlation: 0.223165
+
+Epoch: 92  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 92  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.491s | LR: 0.000194 | Average Loss:  0.01283 | Accuracy: 98.25% (1288/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  702 | FP:    1 |
+    -----------------------
+    | FN:   22 | TN:  586 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9696
+      TNR/Specificity: 0.9983
+      Precision: 0.9986
+      Recall: 0.9696
+      F1-score: 0.9839
+  - Regression:
+      MAE:  0.4203
+      MSE:  0.8658
+      RMSE:  0.9305
+      R2:  0.9793
+
+  - Correlation:
+      Spearman correlation: 0.992428
+
+  End of test:
+  | time:    3.751s | LR: 0.000194 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   70 | FP:   42 |
+    -----------------------
+    | FN:   64 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5224
+      TNR/Specificity: 0.8820
+      Precision: 0.6250
+      Recall: 0.5224
+      F1-score: 0.5691
+  - Regression:
+      MAE:  5.1653
+      MSE: 44.1204
+      RMSE:  6.6423
+      R2: -0.3396
+
+  - Correlation:
+      Spearman correlation: 0.227982
+
+Epoch: 93  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 93  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.549s | LR: 0.000194 | Average Loss:  0.01349 | Accuracy: 98.78% (1295/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  733 | FP:    3 |
+    -----------------------
+    | FN:   13 | TN:  562 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9826
+      TNR/Specificity: 0.9947
+      Precision: 0.9959
+      Recall: 0.9826
+      F1-score: 0.9892
+  - Regression:
+      MAE:  0.4134
+      MSE:  0.8711
+      RMSE:  0.9333
+      R2:  0.9789
+
+  - Correlation:
+      Spearman correlation: 0.992669
+
+  End of test:
+  | time:    3.785s | LR: 0.000194 | Average Loss:      nan | Accuracy: 77.96% (382/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   71 | FP:   45 |
+    -----------------------
+    | FN:   63 | TN:  311 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5299
+      TNR/Specificity: 0.8736
+      Precision: 0.6121
+      Recall: 0.5299
+      F1-score: 0.5680
+  - Regression:
+      MAE:  5.2061
+      MSE: 43.6224
+      RMSE:  6.6047
+      R2: -0.3245
+
+  - Correlation:
+      Spearman correlation: 0.213002
+
+Epoch: 94  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 94  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.480s | LR: 0.000194 | Average Loss:  0.01454 | Accuracy: 98.25% (1288/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    2 |
+    -----------------------
+    | FN:   21 | TN:  590 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9708
+      TNR/Specificity: 0.9966
+      Precision: 0.9971
+      Recall: 0.9708
+      F1-score: 0.9838
+  - Regression:
+      MAE:  0.3509
+      MSE:  0.6606
+      RMSE:  0.8128
+      R2:  0.9848
+
+  - Correlation:
+      Spearman correlation: 0.993075
+
+  End of test:
+  | time:    3.752s | LR: 0.000194 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   69 | FP:   37 |
+    -----------------------
+    | FN:   65 | TN:  319 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5149
+      TNR/Specificity: 0.8961
+      Precision: 0.6509
+      Recall: 0.5149
+      F1-score: 0.5750
+  - Regression:
+      MAE:  5.1878
+      MSE: 44.6490
+      RMSE:  6.6820
+      R2: -0.3557
+
+  - Correlation:
+      Spearman correlation: 0.221400
+
+Epoch: 95  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 95  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.278s | LR: 0.000194 | Average Loss:  0.01342 | Accuracy: 98.93% (1297/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  706 | FP:    1 |
+    -----------------------
+    | FN:   13 | TN:  591 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9819
+      TNR/Specificity: 0.9983
+      Precision: 0.9986
+      Recall: 0.9819
+      F1-score: 0.9902
+  - Regression:
+      MAE:  0.4645
+      MSE:  0.9405
+      RMSE:  0.9698
+      R2:  0.9770
+
+  - Correlation:
+      Spearman correlation: 0.992657
+
+  End of test:
+  | time:    3.853s | LR: 0.000194 | Average Loss:      nan | Accuracy: 78.78% (386/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   35 |
+    -----------------------
+    | FN:   69 | TN:  321 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.9017
+      Precision: 0.6500
+      Recall: 0.4851
+      F1-score: 0.5556
+  - Regression:
+      MAE:  5.1347
+      MSE: 44.0776
+      RMSE:  6.6391
+      R2: -0.3383
+
+  - Correlation:
+      Spearman correlation: 0.231638
+
+Epoch: 96  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 96  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.233s | LR: 0.000194 | Average Loss:  0.01457 | Accuracy: 98.02% (1285/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  669 | FP:    2 |
+    -----------------------
+    | FN:   24 | TN:  616 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9654
+      TNR/Specificity: 0.9968
+      Precision: 0.9970
+      Recall: 0.9654
+      F1-score: 0.9809
+  - Regression:
+      MAE:  0.4310
+      MSE:  0.9008
+      RMSE:  0.9491
+      R2:  0.9793
+
+  - Correlation:
+      Spearman correlation: 0.990753
+
+  End of test:
+  | time:    3.836s | LR: 0.000194 | Average Loss:      nan | Accuracy: 78.37% (384/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   70 | FP:   42 |
+    -----------------------
+    | FN:   64 | TN:  314 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5224
+      TNR/Specificity: 0.8820
+      Precision: 0.6250
+      Recall: 0.5224
+      F1-score: 0.5691
+  - Regression:
+      MAE:  5.1939
+      MSE: 43.4510
+      RMSE:  6.5917
+      R2: -0.3193
+
+  - Correlation:
+      Spearman correlation: 0.232424
+
+Epoch: 97  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 97  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   27.339s | LR: 0.000194 | Average Loss:  0.01429 | Accuracy: 97.94% (1284/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  701 | FP:    5 |
+    -----------------------
+    | FN:   22 | TN:  583 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9696
+      TNR/Specificity: 0.9915
+      Precision: 0.9929
+      Recall: 0.9696
+      F1-score: 0.9811
+  - Regression:
+      MAE:  0.4630
+      MSE:  0.9161
+      RMSE:  0.9571
+      R2:  0.9778
+
+  - Correlation:
+      Spearman correlation: 0.992065
+
+  End of test:
+  | time:    4.275s | LR: 0.000194 | Average Loss:      nan | Accuracy: 77.96% (382/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   39 |
+    -----------------------
+    | FN:   69 | TN:  317 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8904
+      Precision: 0.6250
+      Recall: 0.4851
+      F1-score: 0.5462
+  - Regression:
+      MAE:  5.1898
+      MSE: 44.3163
+      RMSE:  6.6571
+      R2: -0.3456
+
+  - Correlation:
+      Spearman correlation: 0.224394
+
+Epoch: 98  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 98  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   26.377s | LR: 0.000194 | Average Loss:  0.01373 | Accuracy: 98.78% (1295/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  727 | FP:    3 |
+    -----------------------
+    | FN:   13 | TN:  568 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9824
+      TNR/Specificity: 0.9947
+      Precision: 0.9959
+      Recall: 0.9824
+      F1-score: 0.9891
+  - Regression:
+      MAE:  0.3783
+      MSE:  0.7231
+      RMSE:  0.8504
+      R2:  0.9828
+
+  - Correlation:
+      Spearman correlation: 0.993565
+
+  End of test:
+  | time:    3.892s | LR: 0.000194 | Average Loss:      nan | Accuracy: 79.18% (388/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   72 | FP:   40 |
+    -----------------------
+    | FN:   62 | TN:  316 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5373
+      TNR/Specificity: 0.8876
+      Precision: 0.6429
+      Recall: 0.5373
+      F1-score: 0.5854
+  - Regression:
+      MAE:  5.1776
+      MSE: 43.5449
+      RMSE:  6.5989
+      R2: -0.3221
+
+  - Correlation:
+      Spearman correlation: 0.234164
+
+Epoch: 99  Current Best Test for f1-score: 0.591304347826087 at epoch 8
+Epoch: 99  Current Best Test for accuracy: 81.63265306122449 at epoch 6
+  End of train:
+  | time:   25.806s | LR: 0.000194 | Average Loss:  0.01432 | Accuracy: 98.78% (1295/1311) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:  698 | FP:    2 |
+    -----------------------
+    | FN:   14 | TN:  597 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.9803
+      TNR/Specificity: 0.9967
+      Precision: 0.9971
+      Recall: 0.9803
+      F1-score: 0.9887
+  - Regression:
+      MAE:  0.3753
+      MSE:  0.7445
+      RMSE:  0.8628
+      R2:  0.9825
+
+  - Correlation:
+      Spearman correlation: 0.992124
+
+  End of test:
+  | time:    4.021s | LR: 0.000194 | Average Loss:      nan | Accuracy: 78.16% (383/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   65 | FP:   38 |
+    -----------------------
+    | FN:   69 | TN:  318 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4851
+      TNR/Specificity: 0.8933
+      Precision: 0.6311
+      Recall: 0.4851
+      F1-score: 0.5485
+  - Regression:
+      MAE:  5.1327
+      MSE: 43.9204
+      RMSE:  6.6272
+      R2: -0.3335
+
+  - Correlation:
+      Spearman correlation: 0.235509
+

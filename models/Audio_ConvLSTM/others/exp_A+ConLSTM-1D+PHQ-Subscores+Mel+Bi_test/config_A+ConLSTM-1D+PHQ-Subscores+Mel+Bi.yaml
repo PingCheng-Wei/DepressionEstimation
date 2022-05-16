@@ -1,0 +1,54 @@
+!!omap
+- OUTPUT_DIR: exp_A+ConLSTM-1D+PHQ-Subscores+Mel+Bi
+- SAVE_CONFIG_NAME: config_A+ConLSTM-1D+PHQ-Subscores+Mel+Bi.yaml
+- CKPTS_DIR: /cvhci/temp/wpingcheng/ckpts_new/
+- TYPE: A+ConLSTM-1D+PHQ-Subscores+Mel+Bi
+- MANUAL_SEED: 1
+- LOG_TITLE: Depression Detection with Clipped_Audio(Mel), ConLSTM-1D Bidirectional,
+    PHQ-Subscores, CrossEntropy with weights, ASAM
+- DATA: !!omap
+  - TRAIN_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/train/clipped_data/
+  - TEST_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/test/clipped_data/
+  - USE_MEL_SPECTROGRAM: true
+  - VISUAL_WITH_GAZE: false
+  - PADDING:
+  - RESCALE_SIZE:
+  - CROP_SIZE:
+  - BATCH_SIZE: 300
+  - NUM_WORKERS: 0
+- MODEL: !!omap
+  - PHQ_THRESHOLD: 10
+  - EPOCHS: 200
+  - WEIGHTS: !!omap
+    - TYPE: new
+    - DATE:
+    - PATH: model_weights
+    - NAME:
+    - CUSTOM_ABSOLUTE_PATH:
+    - INCLUDED:
+  - AUDIO_NET: !!omap
+    - INPUT_DIM: 80
+    - OUTPUT_DIM: 256
+    - CONV_HIDDEN: 256
+    - LSTM_HIDDEN: 256
+    - NUM_LAYERS: 4
+    - ACTIVATION: relu
+    - NORM: bn
+    - DROPOUT: 0.5
+  - EVALUATOR: !!omap
+    - PREDICT_TYPE: phq-subscores
+    - INPUT_FEATURE_DIM: 256
+    - CLASSES_RESOLUTION: 4
+    - N_CLASSES: 4
+    - N_SUBSCORES: 8
+    - STD: 5
+  - CRITERION: !!omap
+    - USE_SOFT_LABEL: false
+    - USE_WEIGHTS: true
+  - OPTIMIZER: !!omap
+    - LR: 0.001
+    - WEIGHT_DECAY: 0.0001
+    - USE_SAM: true
+  - SCHEDULER: !!omap
+    - STEP_SIZE: 20
+    - GAMMA: 0.9

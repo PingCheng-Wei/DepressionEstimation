@@ -1,0 +1,108 @@
+------------------------------------------------------Depression Detection with audio and visual data, ConvBiLSTM, PHQ-Subscores, Fusion-Attention, CrossEntropy, ASAM------------------------------------------------------
+Epoch: 0  Current Best Test for f1-score: 0 at epoch 0
+Epoch: 0  Current Best Test for accuracy: 0 at epoch 0
+  End of test:
+  | time:    5.115s | LR: 0.001000 | Average Loss:      nan | Accuracy: 82.04% (402/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   63 | FP:   17 |
+    -----------------------
+    | FN:   71 | TN:  339 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4701
+      TNR/Specificity: 0.9522
+      Precision: 0.7875
+      Recall: 0.4701
+      F1-score: 0.5888
+  - Regression:
+      MAE:  4.9163
+      MSE: 34.2796
+      RMSE:  5.8549
+      R2: -0.0408
+
+  - Correlation:
+      Spearman correlation: 0.239740
+
+Gender Analysis based on clips:
+  Female - Number of clips: 284, depressed: 79, non-depressed: 205
+    - Confusion Matrix ( acc: 80.63% (229/284) ):
+      -----------------------
+      | TP:   41 | FP:   17 |
+      -----------------------
+      | FN:   38 | TN:  188 |
+      -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.5190
+      TNR/Specificity: 0.9171
+      Precision: 0.7069
+      Recall: 0.5190
+      F1-score: 0.5985
+  Male - Number of clips: 206, depressed: 55, non-depressed: 151
+    - Confusion Matrix ( acc: 83.98% (173/206) ):
+      -----------------------
+      | TP:   22 | FP:    0 |
+      -----------------------
+      | FN:   33 | TN:  151 |
+      -----------------------
+
+  - Classification:
+      TPR/Sensitivity: 0.4000
+      TNR/Specificity: 1.0000
+      Precision: 1.0000
+      Recall: 0.4000
+      F1-score: 0.5714
+Participant Analysis:
+   Binary GT of Participants: [0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+     Prediction of Binary GT: [0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   PHQ-Score of Participants: [2, 3, 0, 22, 15, 21, 1, 1, 1, 18, 5, 10, 5, 18, 13, 0, 12, 9, 1, 15, 2, 5, 7, 17, 3, 0, 12, 0, 10, 3, 2, 1, 8, 2, 6, 9, 1, 17, 17, 9, 2, 9, 0, 3, 3, 1, 7]
+     Prediction of PHQ-Score: [6, 6, 6, 6, 11, 10, 10, 6, 6, 9, 7, 15, 6, 8, 6, 6, 12, 6, 13, 6, 6, 6, 6, 8, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 11, 6, 6, 6, 6, 7, 5, 6, 6, 6]
+    - Confusion Matrix ( acc: 80.85% (38/47) ):
+      -----------------------
+      | TP:    7 | FP:    2 |
+      -----------------------
+      | FN:    7 | TN:   31 |
+      -----------------------
+
+  - Classification:
+      TPR/Sensitivity: 0.5000
+      TNR/Specificity: 0.9394
+      Precision: 0.7778
+      Recall: 0.5000
+      F1-score: 0.6087
+  - Regression:
+      MAE:  5.0638
+      MSE: 36.8085
+      RMSE:  6.0670
+      R2:  0.1022
+
+Participant gender Analysis:
+  Female - Number of participants: 24, depressed: 7, non-depressed: 17
+    - Confusion Matrix ( acc: 79.17% (19/24) ):
+      -----------------------
+      | TP:    4 | FP:    2 |
+      -----------------------
+      | FN:    3 | TN:   15 |
+      -----------------------
+
+  - Classification:
+      TPR/Sensitivity: 0.5714
+      TNR/Specificity: 0.8824
+      Precision: 0.6667
+      Recall: 0.5714
+      F1-score: 0.6154
+  Male - Number of participants: 23, depressed: 7, non-depressed: 16
+    - Confusion Matrix ( acc: 82.61% (19/23) ):
+      -----------------------
+      | TP:    3 | FP:    0 |
+      -----------------------
+      | FN:    4 | TN:   16 |
+      -----------------------
+
+  - Classification:
+      TPR/Sensitivity: 0.4286
+      TNR/Specificity: 1.0000
+      Precision: 1.0000
+      Recall: 0.4286
+      F1-score: 0.6000

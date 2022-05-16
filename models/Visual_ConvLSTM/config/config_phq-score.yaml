@@ -1,0 +1,123 @@
+# Arguments:
+#   OUTPUT_DIR: 		str, store the model running output, such as log, config files ...
+#   SAVE_CONFIG_NAME: 		str, name of the config file to store under 'OUTPUT_DIR'
+#   CKPTS_DIR: 			str, path to the root directory of storing the checkpoints you want
+#   TYPE: 			str, type of the model, also name of the log file and folder name under 'CKPTS_DIR' to store checkpoints
+#   MANUAL_SEED: 		int, set up manual seed
+#   LOG_TITLE:			str, message that will be print out in the first line of log file
+
+#   DATA:
+#     TRAIN_ROOT_DIR: 		str, absolute path to the root directory of the taining dataset
+#     VALIDATION_ROOT_DIR: 	str, absolute path to the root directory of the validation dataset
+#     TEST_ROOT_DIR: 		str, absolute path to the root directory of the test dataset
+#     USE_MEL_SPECTROGRAM: 	bool, set to True if Mel Spectrogram is desired to use, else False for normal Spectrogram
+#     VISUAL_WITH_GAZE: 	bool, set to True if gaze vector wants to be included with facial key points, else False for not
+#     VISUAL_WITH_CONFIDENCE: 	bool, set to True if confidence score in all visual data wants to be included, else False for not
+#     PADDING: 			int, 2D tuple or list, desired output size for padding. For tuple please use [x, y] format. it will then be transferred to tuple
+#     RESCALE_SIZE: 		int, 2D tuple or list, desired output size after rescaling. For tuple please use [x, y] format. it will then be transferred to tuple
+#     CROP_SIZE: 		int, 2D tuple or list, desired output size after cropping. For tuple please use [x, y] format. it will then be transferred to tuple
+#     BATCH_SIZE: 		int, number of batch for the DataLoader
+#     NUM_WORKERS: 		int, how many gpus for the DataLoader initialization
+
+#  MODEL:
+#    PHQ_THRESHOLD: 		int, threshold for deciding whether the person has major depressive disorder or not. Should be 10 according to definition
+#    EPOCHS: 			int, number of epochs
+#    WEIGHTS:
+#      TYPE: 			str, could be ['new', 'last', 'absolute_path', others custom_type] such as 'L+Evaluator', 'A+Evaluator', 'V+Evaluator'
+#      DATE: 			str in format 'YYYY-MM-DD', if weight type is 'last', we could give a specific date to filter the checkpoints, else leave it empty, indicating 'None'
+#      PATH: 			str, name of the folder where the best model weights stores after finishing training, 
+#                                    Also if custom_weight_type is given, it will search this folder to find to model
+#      NAME: 			str in format '{}.pt', name of the weights file to load under 'PATH' folder if custom_weight_type is given
+#      CUSTOM_ABSOLUTE_PATH: 	str, a full absolute path to model weights file if in 'TYPE' 'absolute_path' is chosen
+#      INCLUDED: 		list of str, what model parts are included in the weights file such as ['evaluator'], ['swin', 'evaluator'], ['st-gcn', 'transformer']
+#   AUDIO_NET:
+#      INPUT_DIM:		int, input dimension of audio frequency bins
+#      OUTPUT_DIM:		int, desired output feature dimension 
+#      CONV_HIDDEN:		int, desired hidden dimension for/output dimension after 1D CNN
+#      LSTM_HIDDEN:		int, desired hidden dimension for/output dimension after LSTM model
+#      NUM_LAYERS:		int, number of how many LSTM block
+#      ACTIVATION:	  	str, type if activation function in the last FC layer, could be ['sigmoid', 'softmax', 'global', else]
+#      NORM: 		 	str, type of normalization, could be ['bn', 'wn']: nn.BatchNorm1d, nn.utils.weight_norm
+#      DROPOUT:			float, dropout probability, should be between 0~1
+#   EVALUATOR:
+#      PREDICT_TYPE:		str, what type of score to predict, could be ['phq-subscores', 'phq-score', 'phq-binary'] 
+#                                    it will use 'multi-head model' to predict the 'subscores' and 'single-head model' to predict the 'PHQ Score' or 'Binary Depression Classification'
+#      INPUT_FEATURE_DIM:	int, input feature dimension for evaluator
+#      CLASSES_RESOLUTION:	int, output dimension of evaluator as well as desired resolution for Gauss distribution. 
+#                                    if ['CRITERION']['USE_SOFT_LABEL'] is False, then 'CLASSES_RESOLUTION' should be equal to ['N_CLASSES']
+#      N_CLASSES:		int, number of classes of the dataset. 'CLASSES_RESOLUTION' would be convert back to 'N_CLASSES' if soft label is used
+#      N_SUBSCORES:		int, number of subscores. Remember to assign a value e.g. 8 in case 'PREDICT_TYPE' is 'phq-subscores'
+#      STD:			float, standard deviation for gaussian distribution learning, 
+#                                      especially for converting the groung truth subscores to soft_subscores label, which are normal distributed
+#   CRITERION:
+#      USE_SOFT_LABEL: 		bool, if True, then KLDivLoss would be used and ground truth would be converted to continuous distributions (soft label), else CrossEntropyLoss would be used
+#      USE_WEIGHTS:		bool, if True, then weight in Cross Entropy will be set for imbalance dataset
+#   OPTIMIZER:
+#      LR:			float, Learning Rate for the 'Adam Optimizer'
+#      WEIGHT_DECAY:		float, Weight Decay for the 'Adam Optimizer'
+#      USE_SAM:			bool, if True, 'SAM' optimizer in combination with Adam optimizer will be used, else False
+#   SCHEDULER:
+#      STEP_SIZE:		int, step size of learning rate scheduler
+#      GAMMA:			float, to decide the next value of learning rate after one 'STEP_SIZE'. next LR = previous LR * gama (gamma should be < 1)
+
+
+
+
+OUTPUT_DIR: exp_V+Conv2D-BiLSTM+PHQ-Score
+SAVE_CONFIG_NAME: config_V+Conv2D-BiLSTM+PHQ-Score.yaml
+CKPTS_DIR: /cvhci/temp/wpingcheng/ckpts_new/  # TODO
+TYPE: V+Conv2D-BiLSTM+PHQ-Score  # TODO
+MANUAL_SEED: 1
+LOG_TITLE: Depression Detection with visual features (key points & gaze direction), Conv2D-BiLSTM, PHQ-Score, CrossEntropy with weights, ASAM # TODO
+
+DATA:
+  TRAIN_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/train/clipped_data/
+  VALIDATION_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/train/original_data/
+  TEST_ROOT_DIR: /cvhci/temp/wpingcheng/DAIC_WOZ-generated_database_V2/test/clipped_data/
+  USE_MEL_SPECTROGRAM: False
+  VISUAL_WITH_GAZE: True
+  PADDING:
+  RESCALE_SIZE:
+  CROP_SIZE:
+  BATCH_SIZE: 500  # TODO
+  NUM_WORKERS: 0  # TODO
+
+MODEL:
+  PHQ_THRESHOLD: 10
+  EPOCHS: 200
+  WEIGHTS:
+    TYPE: new        # ['new', 'last', 'absolute_path', others custom_type]
+    DATE:
+    PATH: model_weights
+    NAME: 
+    CUSTOM_ABSOLUTE_PATH: 
+    INCLUDED:
+  VISUAL_NET:
+    INPUT_DIM: 3
+    CONV_HIDDEN: 256
+    LSTM_HIDDEN: 256
+    OUTPUT_DIM: 256
+    NUM_LAYERS: 4
+    ACTIVATION: relu  # ['sigmoid', 'softmax', 'global', else]
+    NORM: bn          # ['bn', 'wn']: nn.BatchNorm1d, nn.utils.weight_norm
+    DROPOUT: 0.5
+  EVALUATOR:
+    PREDICT_TYPE: phq-score    # ['phq-subscores', 'phq-score', 'phq-binary']
+    INPUT_FEATURE_DIM: 256
+    CLASSES_RESOLUTION: 25 
+    N_CLASSES: 25
+    N_SUBSCORES: 8
+    STD: 5
+  CRITERION:
+    USE_SOFT_LABEL: False
+    USE_WEIGHTS: True
+  OPTIMIZER:
+    LR: 1e-3
+    WEIGHT_DECAY: 1e-4
+    USE_SAM: True
+  SCHEDULER:
+    STEP_SIZE: 10
+    GAMMA: 0.90
+    
+
+

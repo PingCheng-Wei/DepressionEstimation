@@ -1,0 +1,70 @@
+------------------------------------------------------Depression Detection with audio and visual data, ConvBiLSTM, PHQ-Subscores, Fusion-Attention Layer, KLDivLoss , ASAM------------------------------------------------------
+Epoch: 0  Current Best Test for f1-score: 0 at epoch 0
+Epoch: 0  Current Best Test for accuracy: 0 at epoch 0
+  End of test:
+  | time:    5.377s | LR: 0.001000 | Average Loss:      nan | Accuracy: 81.43% (399/490) |
+  Output Scores:
+  - Confusion Matrix:
+    -----------------------
+    | TP:   61 | FP:   18 |
+    -----------------------
+    | FN:   73 | TN:  338 |
+    -----------------------
+  - Classification:
+      TPR/Sensitivity: 0.4552
+      TNR/Specificity: 0.9494
+      Precision: 0.7722
+      Recall: 0.4552
+      F1-score: 0.5728
+  - Regression:
+      MAE:  5.8735
+      MSE: 59.0939
+      RMSE:  7.6873
+      R2: -0.7942
+
+  - Correlation:
+      Spearman correlation: 0.119195
+
+Gender Analysis based on clips:
+  Female - Number of clips: 284, depressed: 79, non-depressed: 205
+    - Confusion Matrix ( acc: 80.28% (228/284) ):
+      -----------------------
+      | TP:   38 | FP:   15 |
+      -----------------------
+      | FN:   41 | TN:  190 |
+      -----------------------
+  Male - Number of clips: 206, depressed: 55, non-depressed: 151
+    - Confusion Matrix ( acc: 83.01% (171/206) ):
+      -----------------------
+      | TP:   23 | FP:    3 |
+      -----------------------
+      | FN:   32 | TN:  148 |
+      -----------------------
+
+Participant Analysis:
+   Binary GT of Participants: [0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+  Prediction of Participants: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - Confusion Matrix ( acc: 80.85% (38/47) ):
+      -----------------------
+      | TP:    6 | FP:    1 |
+      -----------------------
+      | FN:    8 | TN:   32 |
+      -----------------------
+
+Participant gender Analysis:
+  Female - Number of participants: 24, depressed: 7, non-depressed: 17
+    - Confusion Matrix ( acc: 79.17% (19/24) ):
+      -----------------------
+      | TP:    3 | FP:    1 |
+      -----------------------
+      | FN:    4 | TN:   16 |
+      -----------------------
+
+  Male - Number of participants: 23, depressed: 7, non-depressed: 16
+    - Confusion Matrix ( acc: 82.61% (19/23) ):
+      -----------------------
+      | TP:    3 | FP:    0 |
+      -----------------------
+      | FN:    4 | TN:   16 |
+      -----------------------
+
