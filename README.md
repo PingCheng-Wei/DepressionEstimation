@@ -145,3 +145,5 @@ TODO
 
 
 # Results
+
+![visualization_of_recombination](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/visualization_of_recombination.PNG)
