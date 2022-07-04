@@ -1,4 +1,4 @@
-# Deep Learning-based Multi-modal Depression Estimation using Knowledge from Micro-facial Expressions, Audio and Text
+# Multi-modal Depression Estimation based on Sub-attentional Fusion
 
 This is the whole project of my bacherlor thesis. It is about automatic depression estimation based on AI approach.
 
