@@ -62,13 +62,13 @@ def main(dataloaders, visual_net, audio_net, text_net, evaluator, base_logger, w
             if mode == 'train':
                 visual_net.train()
                 audio_net.train()
-                # text_net.train()
+                text_net.train()
                 evaluator.train()
                 torch.set_grad_enabled(True)
             else:
                 visual_net.eval()
                 audio_net.eval()
-                # text_net.eval()
+                text_net.eval()
                 evaluator.eval()
                 torch.set_grad_enabled(False)
 
