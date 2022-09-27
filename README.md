@@ -122,10 +122,9 @@ The archetecture of each attentional fusion layer, which includes a gobal attent
 
 5. Download the model weights and store them in the each model in `models/<which model>/model_weights` directory. The followings are the available pre-trained weights:
 
-TODO
+    * [AVT and AV pre-trained weights](https://drive.google.com/drive/folders/1f8Ud6hOxjnWJVTpqkhKIV5Ro-XjCyBxV?usp=sharing)
 
-
-7. (Optional) To train or test on MS COCO install `pycocotools` from one of these repos. They are forks of the original pycocotools with fixes for Python3 and Windows (the official repo doesn't seem to be active anymore).
+6. (Optional) To train or test on MS COCO install `pycocotools` from one of these repos. They are forks of the original pycocotools with fixes for Python3 and Windows (the official repo doesn't seem to be active anymore).
 
     * Linux: https://github.com/waleedka/coco
     * Windows: https://github.com/philferriere/cocoapi.
