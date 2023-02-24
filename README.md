@@ -1,6 +1,6 @@
 # Multi-modal Depression Estimation based on Sub-attentional Fusion
 
-This is the whole project of my bacherlor thesis. It is about automatic depression estimation based on AI approach.
+This is the whole project of my bacherlor thesis. It is about automatic depression estimation based on AI approach. The publication of the paper can be found at [here](https://cvhci.anthropomatik.kit.edu/publications_2307.php)
 
 This repository includes:
 
@@ -59,7 +59,7 @@ After downloading the dataset, if you wish to preprocess the data as we did, two
 The overall archetecture of the **Sub-attentional ConvBiLSTM** model:
 ![Sub-attentional_ConvBiLSTM](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/ConvBiLSTM_Sub-Atten.png)
 
-The CNN layers and BiLSTM blocks are utilized as feature extractors, followed by 8 different attentional late fusion layers with 8 classification heads. For more detail, please refer to the [bachelor's thesis](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/BA_Ping-Cheng%20Wei.pdf).
+The CNN layers and BiLSTM blocks are utilized as feature extractors, followed by 8 different attentional late fusion layers with 8 classification heads. For more detail, please refer to the [paper](https://cvhci.anthropomatik.kit.edu/publications_2307.php).
 
 The archetecture of each attentional fusion layer, which includes a gobal attention and a local attention, could be illustrated as below:
 ![attentional fusion layer](https://github.com/PingCheng-Wei/DepressionEstimation/blob/main/images/Attentional_Fusion_Block.png)
