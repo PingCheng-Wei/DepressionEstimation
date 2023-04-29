@@ -1,6 +1,6 @@
 # Multi-modal Depression Estimation based on Sub-attentional Fusion
 
-This is the whole project of my bacherlor thesis. It is about automatic depression estimation based on AI approach. The publication of the paper can be found at [here](https://cvhci.anthropomatik.kit.edu/publications_2307.php)
+This is the whole project of my bacherlor thesis. It is about automatic depression estimation based on AI approach. The publication of the paper can be found at [here](https://link.springer.com/chapter/10.1007/978-3-031-25075-0_42) or [here](https://cvhci.anthropomatik.kit.edu/publications_2307.php)
 
 This repository includes:
 
